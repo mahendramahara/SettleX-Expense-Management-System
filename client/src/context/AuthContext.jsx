@@ -43,6 +43,18 @@ const GUEST_ADMIN_USER = {
   isSuspended: false,
 };
 
+const getOAuthRedirectUri = () => {
+  const configured = import.meta.env.VITE_GOOGLE_REDIRECT_URI;
+  if (typeof window !== 'undefined') {
+    const isLocalhost = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+    if (!isLocalhost && configured && configured.includes('localhost')) {
+      return `${window.location.origin}/auth/callback`;
+    }
+    return configured || `${window.location.origin}/auth/callback`;
+  }
+  return configured || 'http://localhost:5173/auth/callback';
+};
+
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(() => httpClient.getToken());
@@ -272,19 +284,15 @@ export function AuthProvider({ children }) {
   };
 
   const loginWithGoogle = async () => {
+    const redirectUri = getOAuthRedirectUri();
     try {
-      const redirectUri =
-        import.meta.env.VITE_GOOGLE_REDIRECT_URI || `${window.location.origin}/auth/callback`;
       const res = await authService.getGoogleAuthUrl(redirectUri);
       if (res?.data?.url) {
         window.location.href = res.data.url;
         return;
       }
     } catch {
-      const clientId =
-        import.meta.env.VITE_GOOGLE_CLIENT_ID || '';
-      const redirectUri =
-        import.meta.env.VITE_GOOGLE_REDIRECT_URI || `${window.location.origin}/auth/callback`;
+      const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || '';
       const rootUrl = 'https://accounts.google.com/o/oauth2/v2/auth';
       const params = new URLSearchParams({
         client_id: clientId,
@@ -301,8 +309,7 @@ export function AuthProvider({ children }) {
   const handleGoogleCallback = async (code) => {
     setIsLoading(true);
     try {
-      const redirectUri =
-        import.meta.env.VITE_GOOGLE_REDIRECT_URI || `${window.location.origin}/auth/callback`;
+      const redirectUri = getOAuthRedirectUri();
       const response = await authService.googleCallback({ code, redirectUri });
       const authToken = response.data?.token || response.token;
       const authUser = response.data?.user || response.user;

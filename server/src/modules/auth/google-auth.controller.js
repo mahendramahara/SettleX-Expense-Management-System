@@ -6,7 +6,9 @@ export class GoogleAuthController {
     this.redirectUri =
       config.redirectUri ||
       process.env.GOOGLE_REDIRECT_URI ||
-      'http://localhost:5173/auth/callback';
+      (process.env.NODE_ENV === 'production'
+        ? 'https://sattlex.miro.com.np/auth/callback'
+        : 'http://localhost:5173/auth/callback');
 
     this.getAuthUrl = this.getAuthUrl.bind(this);
     this.handleCallback = this.handleCallback.bind(this);

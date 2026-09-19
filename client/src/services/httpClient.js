@@ -1,4 +1,15 @@
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const getBaseUrl = () => {
+  const envUrl = import.meta.env.VITE_API_URL;
+  if (typeof window !== 'undefined') {
+    const isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+    if (!isLocal && envUrl && envUrl.includes('localhost')) {
+      return '/api';
+    }
+  }
+  return envUrl || 'http://localhost:5000/api';
+};
+
+const BASE_URL = getBaseUrl();
 
 export class HttpClient {
   constructor(baseUrl = BASE_URL) {

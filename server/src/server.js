@@ -4,7 +4,7 @@ import { App } from './app.js';
 dotenv.config();
 
 export class Server {
-  constructor(port = process.env.PORT || 5000, host = process.env.HOST || 'localhost') {
+  constructor(port = process.env.PORT || 5000, host = process.env.HOST || '0.0.0.0') {
     this.port = port;
     this.host = host;
     this.appInstance = new App();
