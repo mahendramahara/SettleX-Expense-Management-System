@@ -230,3 +230,7 @@ export class App {
     return this.adminModel;
   }
 }
+
+const appInstance = new App();
+
+export default appInstance.getApp();
