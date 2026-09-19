@@ -12,11 +12,16 @@ export class Server {
     this.server = null;
   }
 
+  async init() {
+    if (this.initialized) return;
+    await this.db.connect();
+    await this.appInstance.getAdminModel().seedDefaultSuperAdmin();
+    this.initialized = true;
+  }
+
   async start() {
     try {
-      await this.db.connect();
-
-      await this.appInstance.getAdminModel().seedDefaultSuperAdmin();
+      await this.init();
 
       const expressApp = this.appInstance.getApp();
       const serverUrl = `http://${this.host}:${this.port}`;
@@ -40,4 +45,18 @@ export class Server {
 }
 
 const serverInstance = new Server();
-serverInstance.start();
+
+if (!process.env.VERCEL && process.env.NODE_ENV !== 'test') {
+  serverInstance.start();
+}
+
+const expressApp = serverInstance.appInstance.getApp();
+
+const vercelHandler = async (req, res) => {
+  await serverInstance.init();
+  return expressApp(req, res);
+};
+
+export { serverInstance };
+
+export default vercelHandler;

@@ -179,6 +179,15 @@ export class App {
     const uploadController = new UploadController(cloudinaryService);
     const uploadRoutes = createUploadRoutes(uploadController, this.authMiddleware.authenticate);
 
+    this.app.get('/', (req, res) => {
+      res.status(200).json({
+        success: true,
+        message: 'SettleX Expense Management API is live',
+        healthCheck: '/api/health',
+        timestamp: new Date().toISOString(),
+      });
+    });
+
     this.app.get('/api/health', (req, res) => {
       res.status(200).json({
         success: true,
@@ -233,4 +242,7 @@ export class App {
 
 const appInstance = new App();
 
-export default appInstance.getApp();
+export { appInstance };
+
+export default appInstance.getApp();
+

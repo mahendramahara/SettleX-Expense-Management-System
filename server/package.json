@@ -4,9 +4,14 @@
   "description": "SettleX BCA final-year group expense management and debt settlement system",
   "type": "module",
   "main": "src/server.js",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "nodemon",
     "start": "node src/server.js",
+    "build": "echo 'No build step required for server'",
+    "vercel-build": "echo 'No build step required for server'",
     "test": "vitest run",
     "test:watch": "vitest",
     "format": "prettier --write .",
