@@ -1,0 +1,631 @@
+{
+  "user": {
+    "id": "demo-user",
+    "name": "Demo User",
+    "email": "demo@settlex.app",
+    "role": "user",
+    "tier": "student",
+    "isVerified": true,
+    "avatar": "",
+    "currencyPreference": "NPR"
+  },
+  "dashboard": {
+    "stats": {
+      "totalGroups": 4,
+      "totalExpensesPaisa": 12480000,
+      "youOwePaisa": 315000,
+      "youAreOwedPaisa": 620000,
+      "netBalancePaisa": 305000
+    },
+    "groups": [
+      {
+        "id": "demo-grp-1",
+        "title": "Pokhara Trip",
+        "name": "Pokhara Trip",
+        "description": "Annual friends trip to Pokhara — lakeside meals, paragliding, and boating.",
+        "membersCount": 6,
+        "expensesCount": 7,
+        "balanceType": "owe",
+        "balanceAmount": "You owe Rs. 2,350",
+        "totalSpendPaisa": 4280000,
+        "userBalancePaisa": -235000,
+        "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "demo-grp-2",
+        "title": "Roommates Koteshwor",
+        "name": "Roommates Koteshwor",
+        "description": "Monthly flat expenses — electricity, internet, groceries, and rent share.",
+        "membersCount": 4,
+        "expensesCount": 12,
+        "balanceType": "owed",
+        "balanceAmount": "You are owed Rs. 6,200",
+        "totalSpendPaisa": 3960000,
+        "userBalancePaisa": 620000,
+        "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "demo-grp-3",
+        "title": "College Friends TU",
+        "name": "College Friends TU",
+        "description": "BCA batch group — canteen tabs, event fees, and project materials.",
+        "membersCount": 8,
+        "expensesCount": 9,
+        "balanceType": "settled",
+        "balanceAmount": "Settled up",
+        "totalSpendPaisa": 2760000,
+        "userBalancePaisa": 0,
+        "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "demo-grp-4",
+        "title": "Office Lunch Club",
+        "name": "Office Lunch Club",
+        "description": "Weekly office lunch pool and coffee fund among colleagues.",
+        "membersCount": 5,
+        "expensesCount": 18,
+        "balanceType": "owe",
+        "balanceAmount": "You owe Rs. 800",
+        "totalSpendPaisa": 1480000,
+        "userBalancePaisa": -80000,
+        "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop&q=80"
+      }
+    ],
+    "recentExpenses": [
+      {
+        "id": "demo-exp-1",
+        "title": "Paragliding Adventure",
+        "description": "Paragliding Adventure",
+        "amountPaisa": 1800000,
+        "splitType": "EQUAL",
+        "groupName": "Pokhara Trip",
+        "paidByName": "Aarav Gurung",
+        "createdAt": "2026-09-15T08:00:00Z"
+      },
+      {
+        "id": "demo-exp-2",
+        "title": "Monthly Electricity",
+        "description": "Monthly Electricity",
+        "amountPaisa": 420000,
+        "splitType": "EQUAL",
+        "groupName": "Roommates Koteshwor",
+        "paidByName": "Demo User",
+        "createdAt": "2026-09-14T10:00:00Z"
+      },
+      {
+        "id": "demo-exp-3",
+        "title": "Lakeside Dinner",
+        "description": "Lakeside Dinner",
+        "amountPaisa": 640000,
+        "splitType": "EQUAL",
+        "groupName": "Pokhara Trip",
+        "paidByName": "Priya Thapa",
+        "createdAt": "2026-09-13T18:30:00Z"
+      },
+      {
+        "id": "demo-exp-4",
+        "title": "Internet Bill",
+        "description": "Internet Bill",
+        "amountPaisa": 280000,
+        "splitType": "EQUAL",
+        "groupName": "Roommates Koteshwor",
+        "paidByName": "Bikash Rai",
+        "createdAt": "2026-09-12T09:00:00Z"
+      },
+      {
+        "id": "demo-exp-5",
+        "title": "Exam Printouts",
+        "description": "Exam Printouts",
+        "amountPaisa": 54000,
+        "splitType": "EQUAL",
+        "groupName": "College Friends TU",
+        "paidByName": "Demo User",
+        "createdAt": "2026-09-11T14:00:00Z"
+      },
+      {
+        "id": "demo-exp-6",
+        "title": "Team Lunch Friday",
+        "description": "Team Lunch Friday",
+        "amountPaisa": 185000,
+        "splitType": "EQUAL",
+        "groupName": "Office Lunch Club",
+        "paidByName": "Anita Maharjan",
+        "createdAt": "2026-09-10T13:00:00Z"
+      }
+    ],
+    "activeSettlements": [
+      {
+        "fromName": "Demo User",
+        "toName": "Aarav Gurung",
+        "amountPaisa": 235000
+      },
+      {
+        "fromName": "Demo User",
+        "toName": "Anita Maharjan",
+        "amountPaisa": 80000
+      }
+    ]
+  },
+  "groups": [
+    {
+      "id": "demo-grp-1",
+      "name": "Pokhara Trip",
+      "title": "Pokhara Trip",
+      "description": "Annual friends trip to Pokhara — lakeside meals, paragliding, and boating.",
+      "membersCount": 6,
+      "expensesCount": 7,
+      "balanceType": "owe",
+      "balanceAmount": "You owe Rs. 2,350",
+      "totalSpendPaisa": 4280000,
+      "userBalancePaisa": -235000,
+      "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=80",
+      "members": [
+        {
+          "id": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app"
+        },
+        {
+          "id": "demo-u-2",
+          "name": "Aarav Gurung",
+          "email": "aarav@demo.com"
+        },
+        {
+          "id": "demo-u-3",
+          "name": "Priya Thapa",
+          "email": "priya@demo.com"
+        },
+        {
+          "id": "demo-u-4",
+          "name": "Bikash Rai",
+          "email": "bikash@demo.com"
+        },
+        {
+          "id": "demo-u-5",
+          "name": "Anita Maharjan",
+          "email": "anita@demo.com"
+        },
+        {
+          "id": "demo-u-6",
+          "name": "Roshan Shrestha",
+          "email": "roshan@demo.com"
+        }
+      ],
+      "memberBalances": [
+        {
+          "userId": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app",
+          "netBalancePaisa": -235000
+        },
+        {
+          "userId": "demo-u-2",
+          "name": "Aarav Gurung",
+          "email": "aarav@demo.com",
+          "netBalancePaisa": 420000
+        },
+        {
+          "userId": "demo-u-3",
+          "name": "Priya Thapa",
+          "email": "priya@demo.com",
+          "netBalancePaisa": 180000
+        },
+        {
+          "userId": "demo-u-4",
+          "name": "Bikash Rai",
+          "email": "bikash@demo.com",
+          "netBalancePaisa": -120000
+        },
+        {
+          "userId": "demo-u-5",
+          "name": "Anita Maharjan",
+          "email": "anita@demo.com",
+          "netBalancePaisa": -90000
+        },
+        {
+          "userId": "demo-u-6",
+          "name": "Roshan Shrestha",
+          "email": "roshan@demo.com",
+          "netBalancePaisa": -155000
+        }
+      ],
+      "settlements": [
+        {
+          "fromName": "Demo User",
+          "toName": "Aarav Gurung",
+          "amountPaisa": 235000
+        },
+        {
+          "fromName": "Bikash Rai",
+          "toName": "Priya Thapa",
+          "amountPaisa": 120000
+        },
+        {
+          "fromName": "Anita Maharjan",
+          "toName": "Aarav Gurung",
+          "amountPaisa": 90000
+        },
+        {
+          "fromName": "Roshan Shrestha",
+          "toName": "Priya Thapa",
+          "amountPaisa": 60000
+        },
+        {
+          "fromName": "Roshan Shrestha",
+          "toName": "Aarav Gurung",
+          "amountPaisa": 95000
+        }
+      ],
+      "expenses": [
+        {
+          "id": "e1",
+          "description": "Paragliding Adventure",
+          "amountPaisa": 1800000,
+          "splitType": "EQUAL",
+          "paidByName": "Aarav Gurung",
+          "createdAt": "2026-09-15T08:00:00Z"
+        },
+        {
+          "id": "e2",
+          "description": "Lakeside Dinner",
+          "amountPaisa": 640000,
+          "splitType": "EQUAL",
+          "paidByName": "Priya Thapa",
+          "createdAt": "2026-09-13T18:30:00Z"
+        },
+        {
+          "id": "e3",
+          "description": "Hotel Fishtail Lodge 2N",
+          "amountPaisa": 960000,
+          "splitType": "EQUAL",
+          "paidByName": "Aarav Gurung",
+          "createdAt": "2026-09-12T15:00:00Z"
+        },
+        {
+          "id": "e4",
+          "description": "Bus Tickets Pokhara",
+          "amountPaisa": 360000,
+          "splitType": "EQUAL",
+          "paidByName": "Demo User",
+          "createdAt": "2026-09-11T06:00:00Z"
+        },
+        {
+          "id": "e5",
+          "description": "Boating Phewa Lake",
+          "amountPaisa": 180000,
+          "splitType": "EQUAL",
+          "paidByName": "Bikash Rai",
+          "createdAt": "2026-09-13T10:00:00Z"
+        },
+        {
+          "id": "e6",
+          "description": "Morning Breakfast",
+          "amountPaisa": 210000,
+          "splitType": "EQUAL",
+          "paidByName": "Anita Maharjan",
+          "createdAt": "2026-09-14T07:30:00Z"
+        },
+        {
+          "id": "e7",
+          "description": "Rafting Seti Gandaki",
+          "amountPaisa": 130000,
+          "splitType": "EQUAL",
+          "paidByName": "Roshan Shrestha",
+          "createdAt": "2026-09-14T13:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "demo-grp-2",
+      "name": "Roommates Koteshwor",
+      "title": "Roommates Koteshwor",
+      "description": "Monthly flat expenses — electricity, internet, groceries, and rent share.",
+      "membersCount": 4,
+      "expensesCount": 12,
+      "balanceType": "owed",
+      "balanceAmount": "You are owed Rs. 6,200",
+      "totalSpendPaisa": 3960000,
+      "userBalancePaisa": 620000,
+      "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&auto=format&fit=crop&q=80",
+      "members": [
+        {
+          "id": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app"
+        },
+        {
+          "id": "demo-u-4",
+          "name": "Bikash Rai",
+          "email": "bikash@demo.com"
+        },
+        {
+          "id": "demo-u-5",
+          "name": "Anita Maharjan",
+          "email": "anita@demo.com"
+        },
+        {
+          "id": "demo-u-7",
+          "name": "Kritika Joshi",
+          "email": "kritika@demo.com"
+        }
+      ],
+      "memberBalances": [
+        {
+          "userId": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app",
+          "netBalancePaisa": 620000
+        },
+        {
+          "userId": "demo-u-4",
+          "name": "Bikash Rai",
+          "email": "bikash@demo.com",
+          "netBalancePaisa": -240000
+        },
+        {
+          "userId": "demo-u-5",
+          "name": "Anita Maharjan",
+          "email": "anita@demo.com",
+          "netBalancePaisa": -180000
+        },
+        {
+          "userId": "demo-u-7",
+          "name": "Kritika Joshi",
+          "email": "kritika@demo.com",
+          "netBalancePaisa": -200000
+        }
+      ],
+      "settlements": [
+        {
+          "fromName": "Bikash Rai",
+          "toName": "Demo User",
+          "amountPaisa": 240000
+        },
+        {
+          "fromName": "Kritika Joshi",
+          "toName": "Demo User",
+          "amountPaisa": 200000
+        },
+        {
+          "fromName": "Anita Maharjan",
+          "toName": "Demo User",
+          "amountPaisa": 180000
+        }
+      ],
+      "expenses": [
+        {
+          "id": "r1",
+          "description": "Monthly Electricity",
+          "amountPaisa": 420000,
+          "splitType": "EQUAL",
+          "paidByName": "Demo User",
+          "createdAt": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "r2",
+          "description": "Internet Bill",
+          "amountPaisa": 280000,
+          "splitType": "EQUAL",
+          "paidByName": "Bikash Rai",
+          "createdAt": "2026-09-12T09:00:00Z"
+        },
+        {
+          "id": "r3",
+          "description": "Grocery Week 1",
+          "amountPaisa": 380000,
+          "splitType": "EQUAL",
+          "paidByName": "Demo User",
+          "createdAt": "2026-09-08T11:00:00Z"
+        },
+        {
+          "id": "r4",
+          "description": "Grocery Week 2",
+          "amountPaisa": 340000,
+          "splitType": "EQUAL",
+          "paidByName": "Anita Maharjan",
+          "createdAt": "2026-09-01T11:00:00Z"
+        },
+        {
+          "id": "r5",
+          "description": "Gas Cylinder",
+          "amountPaisa": 220000,
+          "splitType": "EQUAL",
+          "paidByName": "Kritika Joshi",
+          "createdAt": "2026-08-28T14:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "demo-grp-3",
+      "name": "College Friends TU",
+      "title": "College Friends TU",
+      "description": "BCA batch group — canteen tabs, event fees, and project materials.",
+      "membersCount": 8,
+      "expensesCount": 9,
+      "balanceType": "settled",
+      "balanceAmount": "Settled up",
+      "totalSpendPaisa": 2760000,
+      "userBalancePaisa": 0,
+      "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop&q=80",
+      "members": [
+        {
+          "id": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app"
+        },
+        {
+          "id": "demo-u-2",
+          "name": "Aarav Gurung",
+          "email": "aarav@demo.com"
+        },
+        {
+          "id": "demo-u-3",
+          "name": "Priya Thapa",
+          "email": "priya@demo.com"
+        },
+        {
+          "id": "demo-u-8",
+          "name": "Dipesh Karki",
+          "email": "dipesh@demo.com"
+        }
+      ],
+      "memberBalances": [
+        {
+          "userId": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app",
+          "netBalancePaisa": 0
+        },
+        {
+          "userId": "demo-u-2",
+          "name": "Aarav Gurung",
+          "email": "aarav@demo.com",
+          "netBalancePaisa": 0
+        },
+        {
+          "userId": "demo-u-3",
+          "name": "Priya Thapa",
+          "email": "priya@demo.com",
+          "netBalancePaisa": 0
+        },
+        {
+          "userId": "demo-u-8",
+          "name": "Dipesh Karki",
+          "email": "dipesh@demo.com",
+          "netBalancePaisa": 0
+        }
+      ],
+      "settlements": [],
+      "expenses": [
+        {
+          "id": "c1",
+          "description": "Exam Printouts",
+          "amountPaisa": 54000,
+          "splitType": "EQUAL",
+          "paidByName": "Demo User",
+          "createdAt": "2026-09-11T14:00:00Z"
+        },
+        {
+          "id": "c2",
+          "description": "Project Materials",
+          "amountPaisa": 180000,
+          "splitType": "EQUAL",
+          "paidByName": "Aarav Gurung",
+          "createdAt": "2026-09-05T10:00:00Z"
+        },
+        {
+          "id": "c3",
+          "description": "Canteen Weekly",
+          "amountPaisa": 96000,
+          "splitType": "EQUAL",
+          "paidByName": "Priya Thapa",
+          "createdAt": "2026-09-03T13:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "demo-grp-4",
+      "name": "Office Lunch Club",
+      "title": "Office Lunch Club",
+      "description": "Weekly office lunch pool and coffee fund among colleagues.",
+      "membersCount": 5,
+      "expensesCount": 18,
+      "balanceType": "owe",
+      "balanceAmount": "You owe Rs. 800",
+      "totalSpendPaisa": 1480000,
+      "userBalancePaisa": -80000,
+      "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop&q=80",
+      "members": [
+        {
+          "id": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app"
+        },
+        {
+          "id": "demo-u-5",
+          "name": "Anita Maharjan",
+          "email": "anita@demo.com"
+        },
+        {
+          "id": "demo-u-9",
+          "name": "Rajan Poudel",
+          "email": "rajan@demo.com"
+        },
+        {
+          "id": "demo-u-10",
+          "name": "Sanjeev Oli",
+          "email": "sanjeev@demo.com"
+        }
+      ],
+      "memberBalances": [
+        {
+          "userId": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app",
+          "netBalancePaisa": -80000
+        },
+        {
+          "userId": "demo-u-5",
+          "name": "Anita Maharjan",
+          "email": "anita@demo.com",
+          "netBalancePaisa": 240000
+        },
+        {
+          "userId": "demo-u-9",
+          "name": "Rajan Poudel",
+          "email": "rajan@demo.com",
+          "netBalancePaisa": -60000
+        },
+        {
+          "userId": "demo-u-10",
+          "name": "Sanjeev Oli",
+          "email": "sanjeev@demo.com",
+          "netBalancePaisa": -100000
+        }
+      ],
+      "settlements": [
+        {
+          "fromName": "Demo User",
+          "toName": "Anita Maharjan",
+          "amountPaisa": 80000
+        },
+        {
+          "fromName": "Rajan Poudel",
+          "toName": "Anita Maharjan",
+          "amountPaisa": 60000
+        },
+        {
+          "fromName": "Sanjeev Oli",
+          "toName": "Anita Maharjan",
+          "amountPaisa": 100000
+        }
+      ],
+      "expenses": [
+        {
+          "id": "o1",
+          "description": "Team Lunch Friday",
+          "amountPaisa": 185000,
+          "splitType": "EQUAL",
+          "paidByName": "Anita Maharjan",
+          "createdAt": "2026-09-10T13:00:00Z"
+        },
+        {
+          "id": "o2",
+          "description": "Office Coffee Fund",
+          "amountPaisa": 120000,
+          "splitType": "EQUAL",
+          "paidByName": "Rajan Poudel",
+          "createdAt": "2026-09-09T09:00:00Z"
+        },
+        {
+          "id": "o3",
+          "description": "Birthday Cake Sanjeev",
+          "amountPaisa": 85000,
+          "splitType": "EQUAL",
+          "paidByName": "Anita Maharjan",
+          "createdAt": "2026-09-07T17:00:00Z"
+        }
+      ]
+    }
+  ]
+}

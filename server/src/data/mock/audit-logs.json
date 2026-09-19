@@ -1,0 +1,39 @@
+[
+  {
+    "action": "ADMIN_AUTHENTICATION",
+    "targetModel": "Admin",
+    "details": {
+      "ip": "103.235.192.14",
+      "location": "Kathmandu, Nepal",
+      "userAgent": "Chrome/124.0 (Windows NT 10.0)"
+    }
+  },
+  {
+    "action": "DISPATCH_SPENDING_ADVISORY",
+    "targetModel": "User",
+    "details": {
+      "recipient": "Aarav Gurung",
+      "overspendRatio": "2.33x",
+      "excessPaisa": 2400000,
+      "channel": "In-App Notice"
+    }
+  },
+  {
+    "action": "RECORD_SETTLEMENT",
+    "targetModel": "Settlement",
+    "details": {
+      "group": "Pokhara Trip",
+      "amountFormatted": "Rs. 18,500",
+      "method": "eSewa Direct Settlement"
+    }
+  },
+  {
+    "action": "CREATE_GROUP",
+    "targetModel": "Group",
+    "details": {
+      "groupName": "Pokhara Trip",
+      "initialMembers": 3,
+      "currency": "NPR"
+    }
+  }
+]

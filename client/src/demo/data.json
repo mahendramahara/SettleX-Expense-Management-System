@@ -1,0 +1,2250 @@
+{
+  "user": {
+    "id": "demo-user",
+    "name": "Demo User",
+    "email": "demo@settlex.app",
+    "role": "user",
+    "tier": "student",
+    "isVerified": true,
+    "avatar": "",
+    "currencyPreference": "NPR"
+  },
+  "dashboard": {
+    "stats": {
+      "totalGroups": 4,
+      "totalExpensesPaisa": 12480000,
+      "youOwePaisa": 315000,
+      "youAreOwedPaisa": 620000,
+      "netBalancePaisa": 305000
+    },
+    "groups": [
+      {
+        "id": "demo-grp-1",
+        "title": "Pokhara Trip",
+        "name": "Pokhara Trip",
+        "description": "Annual friends trip to Pokhara — lakeside meals, paragliding, and boating.",
+        "membersCount": 6,
+        "expensesCount": 7,
+        "balanceType": "owe",
+        "balanceAmount": "You owe Rs. 2,350",
+        "totalSpendPaisa": 4280000,
+        "userBalancePaisa": -235000,
+        "imageUrl": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "demo-grp-2",
+        "title": "Roommates Koteshwor",
+        "name": "Roommates Koteshwor",
+        "description": "Monthly flat expenses — electricity, internet, groceries, and rent share.",
+        "membersCount": 4,
+        "expensesCount": 12,
+        "balanceType": "owed",
+        "balanceAmount": "You are owed Rs. 6,200",
+        "totalSpendPaisa": 3960000,
+        "userBalancePaisa": 620000,
+        "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "demo-grp-3",
+        "title": "College Friends TU",
+        "name": "College Friends TU",
+        "description": "BCA batch group — canteen tabs, event fees, and project materials.",
+        "membersCount": 8,
+        "expensesCount": 9,
+        "balanceType": "settled",
+        "balanceAmount": "Settled up",
+        "totalSpendPaisa": 2760000,
+        "userBalancePaisa": 0,
+        "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        "id": "demo-grp-4",
+        "title": "Office Lunch Club",
+        "name": "Office Lunch Club",
+        "description": "Weekly office lunch pool and coffee fund among colleagues.",
+        "membersCount": 5,
+        "expensesCount": 18,
+        "balanceType": "owe",
+        "balanceAmount": "You owe Rs. 800",
+        "totalSpendPaisa": 1480000,
+        "userBalancePaisa": -80000,
+        "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop&q=80"
+      }
+    ],
+    "recentExpenses": [
+      {
+        "id": "demo-exp-1",
+        "title": "Paragliding Adventure",
+        "description": "Paragliding Adventure",
+        "amountPaisa": 1800000,
+        "splitType": "EQUAL",
+        "groupName": "Pokhara Trip",
+        "paidByName": "Aarav Gurung",
+        "createdAt": "2026-09-15T08:00:00Z"
+      },
+      {
+        "id": "demo-exp-2",
+        "title": "Monthly Electricity",
+        "description": "Monthly Electricity",
+        "amountPaisa": 420000,
+        "splitType": "EQUAL",
+        "groupName": "Roommates Koteshwor",
+        "paidByName": "Demo User",
+        "createdAt": "2026-09-14T10:00:00Z"
+      },
+      {
+        "id": "demo-exp-3",
+        "title": "Lakeside Dinner",
+        "description": "Lakeside Dinner",
+        "amountPaisa": 640000,
+        "splitType": "EQUAL",
+        "groupName": "Pokhara Trip",
+        "paidByName": "Priya Thapa",
+        "createdAt": "2026-09-13T18:30:00Z"
+      },
+      {
+        "id": "demo-exp-4",
+        "title": "Internet Bill",
+        "description": "Internet Bill",
+        "amountPaisa": 280000,
+        "splitType": "EQUAL",
+        "groupName": "Roommates Koteshwor",
+        "paidByName": "Bikash Rai",
+        "createdAt": "2026-09-12T09:00:00Z"
+      },
+      {
+        "id": "demo-exp-5",
+        "title": "Exam Printouts",
+        "description": "Exam Printouts",
+        "amountPaisa": 54000,
+        "splitType": "EQUAL",
+        "groupName": "College Friends TU",
+        "paidByName": "Demo User",
+        "createdAt": "2026-09-11T14:00:00Z"
+      },
+      {
+        "id": "demo-exp-6",
+        "title": "Team Lunch Friday",
+        "description": "Team Lunch Friday",
+        "amountPaisa": 185000,
+        "splitType": "EQUAL",
+        "groupName": "Office Lunch Club",
+        "paidByName": "Anita Maharjan",
+        "createdAt": "2026-09-10T13:00:00Z"
+      }
+    ],
+    "activeSettlements": [
+      {
+        "fromName": "Demo User",
+        "toName": "Aarav Gurung",
+        "amountPaisa": 235000
+      },
+      {
+        "fromName": "Demo User",
+        "toName": "Anita Maharjan",
+        "amountPaisa": 80000
+      }
+    ]
+  },
+  "groups": [
+    {
+      "id": "group-pokhara-trip",
+      "name": "Pokhara Trekking Expedition",
+      "title": "Pokhara Trekking Expedition",
+      "description": "BCA 8th semester graduation adventure to Annapurna Base Camp & Pokhara Lakeside",
+      "category": "Travel & Trips",
+      "currency": "NPR",
+      "memberCount": 6,
+      "members": [
+        {
+          "id": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app",
+          "role": "admin"
+        },
+        {
+          "id": "demo-u-2",
+          "name": "Aarav Gurung",
+          "email": "aarav.gurung@demo.com",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-3",
+          "name": "Priya Thapa",
+          "email": "priya.thapa@demo.com",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-4",
+          "name": "Bikash Rai",
+          "email": "bikash.rai@demo.com",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-5",
+          "name": "Anjali Shrestha",
+          "email": "anjali.shrestha@demo.com",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-6",
+          "name": "Rohan Shrestha",
+          "email": "rohan.shrestha@demo.com",
+          "role": "member"
+        }
+      ],
+      "expensesCount": 4,
+      "totalExpensesCount": 4,
+      "totalAmountPaisa": 4280000,
+      "totalAmountFormatted": "Rs. 42,800",
+      "createdBy": {
+        "id": "demo-u-1",
+        "name": "Demo User"
+      },
+      "createdAt": "2026-09-10T08:00:00Z",
+      "expenses": [
+        {
+          "id": "exp-101",
+          "title": "Hotel Barahi Lakeside Accommodation",
+          "description": "Hotel Barahi Lakeside Accommodation",
+          "amountPaisa": 1850000,
+          "amountFormatted": "Rs. 18,500",
+          "splitType": "EQUAL",
+          "paidByName": "Demo User",
+          "paidBy": {
+            "id": "demo-u-1",
+            "name": "Demo User"
+          },
+          "createdAt": "2026-09-12T14:30:00Z"
+        },
+        {
+          "id": "exp-102",
+          "title": "Scorpio 4WD Jeep Rental Nayapul",
+          "description": "Scorpio 4WD Jeep Rental Nayapul",
+          "amountPaisa": 1200000,
+          "amountFormatted": "Rs. 12,000",
+          "splitType": "EQUAL",
+          "paidByName": "Demo User",
+          "paidBy": {
+            "id": "demo-u-1",
+            "name": "Demo User"
+          },
+          "createdAt": "2026-09-13T07:15:00Z"
+        },
+        {
+          "id": "exp-103",
+          "title": "ACAP Trekking Entry Permits",
+          "description": "ACAP Trekking Entry Permits",
+          "amountPaisa": 630000,
+          "amountFormatted": "Rs. 6,300",
+          "splitType": "EQUAL",
+          "paidByName": "Aarav Gurung",
+          "paidBy": {
+            "id": "demo-u-2",
+            "name": "Aarav Gurung"
+          },
+          "createdAt": "2026-09-13T11:00:00Z"
+        },
+        {
+          "id": "exp-104",
+          "title": "Lakeside Feast & Farewell Dinner",
+          "description": "Lakeside Feast & Farewell Dinner",
+          "amountPaisa": 600000,
+          "amountFormatted": "Rs. 6,000",
+          "splitType": "EQUAL",
+          "paidByName": "Priya Thapa",
+          "paidBy": {
+            "id": "demo-u-3",
+            "name": "Priya Thapa"
+          },
+          "createdAt": "2026-09-15T20:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "group-roommates-koteshwor",
+      "name": "Roommates Koteshwor Flat",
+      "title": "Roommates Koteshwor Flat",
+      "description": "Shared 3BHK flat rental, electricity, water tank, and fiber internet bills",
+      "category": "Home & Rent",
+      "currency": "NPR",
+      "memberCount": 4,
+      "members": [
+        {
+          "id": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-4",
+          "name": "Bikash Rai",
+          "email": "bikash.rai@demo.com",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-5",
+          "name": "Anjali Shrestha",
+          "email": "anjali.shrestha@demo.com",
+          "role": "admin"
+        },
+        {
+          "id": "demo-u-7",
+          "name": "Dipesh Joshi",
+          "email": "dipesh.joshi@demo.com",
+          "role": "member"
+        }
+      ],
+      "expensesCount": 3,
+      "totalExpensesCount": 3,
+      "totalAmountPaisa": 3960000,
+      "totalAmountFormatted": "Rs. 39,600",
+      "createdBy": {
+        "id": "demo-u-5",
+        "name": "Anjali Shrestha"
+      },
+      "createdAt": "2026-09-01T09:00:00Z",
+      "expenses": [
+        {
+          "id": "exp-201",
+          "title": "Flat Monthly Rent (Bhadra)",
+          "description": "Flat Monthly Rent (Bhadra)",
+          "amountPaisa": 3000000,
+          "amountFormatted": "Rs. 30,000",
+          "splitType": "EQUAL",
+          "paidByName": "Anjali Shrestha",
+          "paidBy": {
+            "id": "demo-u-5",
+            "name": "Anjali Shrestha"
+          },
+          "createdAt": "2026-09-02T10:00:00Z"
+        },
+        {
+          "id": "exp-202",
+          "title": "WorldLink Fiber 300Mbps Renewal",
+          "description": "WorldLink Fiber 300Mbps Renewal",
+          "amountPaisa": 360000,
+          "amountFormatted": "Rs. 3,600",
+          "splitType": "EQUAL",
+          "paidByName": "Bikash Rai",
+          "paidBy": {
+            "id": "demo-u-4",
+            "name": "Bikash Rai"
+          },
+          "createdAt": "2026-09-05T15:30:00Z"
+        },
+        {
+          "id": "exp-203",
+          "title": "Deep Well Water Tanker (5000L)",
+          "description": "Deep Well Water Tanker (5000L)",
+          "amountPaisa": 600000,
+          "amountFormatted": "Rs. 6,000",
+          "splitType": "EQUAL",
+          "paidByName": "Demo User",
+          "paidBy": {
+            "id": "demo-u-1",
+            "name": "Demo User"
+          },
+          "createdAt": "2026-09-08T11:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "group-tu-bca-project",
+      "name": "TU BCA Final Defense Project",
+      "title": "TU BCA Final Defense Project",
+      "description": "Shared expenses for project cloud infra, documentation binding, research & defense lunch",
+      "category": "Education & Tech",
+      "currency": "NPR",
+      "memberCount": 5,
+      "members": [
+        {
+          "id": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app",
+          "role": "admin"
+        },
+        {
+          "id": "demo-u-2",
+          "name": "Aarav Gurung",
+          "email": "aarav.gurung@demo.com",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-8",
+          "name": "Sushmita KC",
+          "email": "sushmita.kc@demo.com",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-9",
+          "name": "Bibek Chaudhary",
+          "email": "bibek.chaudhary@demo.com",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-10",
+          "name": "Pooja Karki",
+          "email": "pooja.karki@demo.com",
+          "role": "member"
+        }
+      ],
+      "expensesCount": 3,
+      "totalExpensesCount": 3,
+      "totalAmountPaisa": 2760000,
+      "totalAmountFormatted": "Rs. 27,600",
+      "createdBy": {
+        "id": "demo-u-1",
+        "name": "Demo User"
+      },
+      "createdAt": "2026-09-05T12:00:00Z",
+      "expenses": [
+        {
+          "id": "exp-301",
+          "title": "AWS Cloud EC2 & MongoDB Atlas Hosting",
+          "description": "AWS Cloud EC2 & MongoDB Atlas Hosting",
+          "amountPaisa": 1250000,
+          "amountFormatted": "Rs. 12,500",
+          "splitType": "EQUAL",
+          "paidByName": "Demo User",
+          "paidBy": {
+            "id": "demo-u-1",
+            "name": "Demo User"
+          },
+          "createdAt": "2026-09-06T14:00:00Z"
+        },
+        {
+          "id": "exp-302",
+          "title": "Thesis Hardcover Binding & Printing",
+          "description": "Thesis Hardcover Binding & Printing",
+          "amountPaisa": 850000,
+          "amountFormatted": "Rs. 8,500",
+          "splitType": "EQUAL",
+          "paidByName": "Sushmita KC",
+          "paidBy": {
+            "id": "demo-u-8",
+            "name": "Sushmita KC"
+          },
+          "createdAt": "2026-09-14T16:20:00Z"
+        },
+        {
+          "id": "exp-303",
+          "title": "Pre-Defense Mock Presentation Snacks",
+          "description": "Pre-Defense Mock Presentation Snacks",
+          "amountPaisa": 660000,
+          "amountFormatted": "Rs. 6,600",
+          "splitType": "EQUAL",
+          "paidByName": "Bibek Chaudhary",
+          "paidBy": {
+            "id": "demo-u-9",
+            "name": "Bibek Chaudhary"
+          },
+          "createdAt": "2026-09-16T17:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "group-thamel-tech",
+      "name": "Kathmandu Tech Summit Trip",
+      "title": "Kathmandu Tech Summit Trip",
+      "description": "Conference tickets, team buffet dinner and shared taxi fares in Kathmandu",
+      "category": "Work & Professional",
+      "currency": "NPR",
+      "memberCount": 4,
+      "members": [
+        {
+          "id": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-2",
+          "name": "Aarav Gurung",
+          "email": "aarav.gurung@demo.com",
+          "role": "member"
+        },
+        {
+          "id": "demo-u-5",
+          "name": "Anjali Shrestha",
+          "email": "anjali.shrestha@demo.com",
+          "role": "admin"
+        },
+        {
+          "id": "demo-u-7",
+          "name": "Dipesh Joshi",
+          "email": "dipesh.joshi@demo.com",
+          "role": "member"
+        }
+      ],
+      "expensesCount": 2,
+      "totalExpensesCount": 2,
+      "totalAmountPaisa": 1480000,
+      "totalAmountFormatted": "Rs. 14,800",
+      "createdBy": {
+        "id": "demo-u-5",
+        "name": "Anjali Shrestha"
+      },
+      "createdAt": "2026-09-12T10:00:00Z",
+      "expenses": [
+        {
+          "id": "exp-401",
+          "title": "Conference Registration Delegate Passes",
+          "description": "Conference Registration Delegate Passes",
+          "amountPaisa": 1000000,
+          "amountFormatted": "Rs. 10,000",
+          "splitType": "EQUAL",
+          "paidByName": "Anjali Shrestha",
+          "paidBy": {
+            "id": "demo-u-5",
+            "name": "Anjali Shrestha"
+          },
+          "createdAt": "2026-09-13T09:00:00Z"
+        },
+        {
+          "id": "exp-402",
+          "title": "Thamel Rooftop Networking Dinner",
+          "description": "Thamel Rooftop Networking Dinner",
+          "amountPaisa": 480000,
+          "amountFormatted": "Rs. 4,800",
+          "splitType": "EQUAL",
+          "paidByName": "Dipesh Joshi",
+          "paidBy": {
+            "id": "demo-u-7",
+            "name": "Dipesh Joshi"
+          },
+          "createdAt": "2026-09-13T21:30:00Z"
+        }
+      ]
+    }
+  ],
+  "admin": {
+    "overview": {
+      "stats": {
+        "totalUsers": 10,
+        "activeUsers": 9,
+        "suspendedUsers": 1,
+        "verifiedEmails": 8,
+        "totalGroups": 4,
+        "totalExpenses": "Rs. 1,24,800",
+        "totalVolumePaisa": 12480000,
+        "pendingSettlements": 3,
+        "totalStaff": 1
+      },
+      "monthlyExpenses": [
+        {
+          "month": "May",
+          "volume": "Rs. 18,200",
+          "paisa": 1820000,
+          "count": 12
+        },
+        {
+          "month": "Jun",
+          "volume": "Rs. 24,500",
+          "paisa": 2450000,
+          "count": 18
+        },
+        {
+          "month": "Jul",
+          "volume": "Rs. 19,800",
+          "paisa": 1980000,
+          "count": 14
+        },
+        {
+          "month": "Aug",
+          "volume": "Rs. 32,400",
+          "paisa": 3240000,
+          "count": 22
+        },
+        {
+          "month": "Sep",
+          "volume": "Rs. 28,900",
+          "paisa": 2890000,
+          "count": 19
+        },
+        {
+          "month": "Oct",
+          "volume": "Rs. 31,000",
+          "paisa": 3100000,
+          "count": 25
+        }
+      ],
+      "expensesByCategory": [
+        {
+          "category": "Travel & Transportation",
+          "amount": "Rs. 42,800",
+          "percentage": 34,
+          "color": "#3b82f6"
+        },
+        {
+          "category": "Food & Dining",
+          "amount": "Rs. 36,400",
+          "percentage": 29,
+          "color": "#10b981"
+        },
+        {
+          "category": "Flat & Rent Utilities",
+          "amount": "Rs. 26,000",
+          "percentage": 21,
+          "color": "#8b5cf6"
+        },
+        {
+          "category": "College & Project Materials",
+          "amount": "Rs. 19,600",
+          "percentage": 16,
+          "color": "#f59e0b"
+        }
+      ],
+      "topSpendingGroups": [
+        {
+          "id": "demo-grp-1",
+          "title": "Pokhara Trip",
+          "membersCount": 6,
+          "totalSpendFormatted": "Rs. 42,800",
+          "expenseCount": 7
+        },
+        {
+          "id": "demo-grp-2",
+          "title": "Roommates Koteshwor",
+          "membersCount": 4,
+          "totalSpendFormatted": "Rs. 39,600",
+          "expenseCount": 12
+        },
+        {
+          "id": "demo-grp-3",
+          "title": "College Friends TU",
+          "membersCount": 8,
+          "totalSpendFormatted": "Rs. 27,600",
+          "expenseCount": 9
+        },
+        {
+          "id": "demo-grp-4",
+          "title": "Office Lunch Club",
+          "membersCount": 5,
+          "totalSpendFormatted": "Rs. 14,800",
+          "expenseCount": 18
+        }
+      ],
+      "recentExpenses": [
+        {
+          "id": "adm-exp-1",
+          "title": "Paragliding Adventure",
+          "groupName": "Pokhara Trip",
+          "paidByName": "Aarav Gurung",
+          "amountPaisa": 1800000,
+          "formattedAmount": "Rs. 18,000",
+          "date": "2026-09-15",
+          "iconBg": "bg-emerald-500/15 text-emerald-600"
+        },
+        {
+          "id": "adm-exp-2",
+          "title": "Monthly Electricity Bill",
+          "groupName": "Roommates Koteshwor",
+          "paidByName": "Demo User",
+          "amountPaisa": 420000,
+          "formattedAmount": "Rs. 4,200",
+          "date": "2026-09-14",
+          "iconBg": "bg-blue-500/15 text-blue-600"
+        },
+        {
+          "id": "adm-exp-3",
+          "title": "Lakeside Dinner Feast",
+          "groupName": "Pokhara Trip",
+          "paidByName": "Aarav Gurung",
+          "amountPaisa": 640000,
+          "formattedAmount": "Rs. 6,400",
+          "date": "2026-09-13",
+          "iconBg": "bg-purple-500/15 text-purple-600"
+        },
+        {
+          "id": "adm-exp-4",
+          "title": "Apartment High-Speed Wi-Fi",
+          "groupName": "Roommates Koteshwor",
+          "paidByName": "Kiran KC",
+          "amountPaisa": 240000,
+          "formattedAmount": "Rs. 2,400",
+          "date": "2026-09-12",
+          "iconBg": "bg-amber-500/15 text-amber-600"
+        },
+        {
+          "id": "adm-exp-5",
+          "title": "TU Exam Project Printouts",
+          "groupName": "College Friends TU",
+          "paidByName": "Demo User",
+          "amountPaisa": 54000,
+          "formattedAmount": "Rs. 540",
+          "date": "2026-09-11",
+          "iconBg": "bg-pink-500/15 text-pink-600"
+        }
+      ],
+      "recentSettlements": [
+        {
+          "id": "adm-set-1",
+          "fromName": "Demo User",
+          "toName": "Aarav Gurung",
+          "groupName": "Pokhara Trip",
+          "amountFormatted": "Rs. 2,350",
+          "method": "eSewa Direct Settlement",
+          "status": "completed",
+          "date": "2026-09-16"
+        },
+        {
+          "id": "adm-set-2",
+          "fromName": "Pooja Thapa",
+          "toName": "Anita Maharjan",
+          "groupName": "Office Lunch Club",
+          "amountFormatted": "Rs. 800",
+          "method": "Khalti QR",
+          "status": "completed",
+          "date": "2026-09-15"
+        },
+        {
+          "id": "adm-set-3",
+          "fromName": "Bikash Rai",
+          "toName": "Demo User",
+          "groupName": "Roommates Koteshwor",
+          "amountFormatted": "Rs. 3,100",
+          "method": "ConnectIPS Bank Transfer",
+          "status": "completed",
+          "date": "2026-09-14"
+        }
+      ],
+      "recentActivities": [
+        {
+          "id": "adm-act-1",
+          "action": "SETTLEMENT_RECORDED",
+          "title": "Debt Settlement Verified",
+          "description": "Demo User settled Rs. 2,350 with Aarav Gurung via eSewa",
+          "time": "12m ago",
+          "type": "settlement"
+        },
+        {
+          "id": "adm-act-2",
+          "action": "EXPENSE_CREATED",
+          "title": "New Expense Recorded",
+          "description": "Aarav Gurung added 'Paragliding Adventure' in Pokhara Trip",
+          "time": "45m ago",
+          "type": "expense"
+        },
+        {
+          "id": "adm-act-3",
+          "action": "GROUP_CREATED",
+          "title": "New Circle Provisioned",
+          "description": "Anita Maharjan created 'Office Lunch Club' circle",
+          "time": "2h ago",
+          "type": "group"
+        },
+        {
+          "id": "adm-act-4",
+          "action": "ALGORITHM_OPTIMIZED",
+          "title": "Graph Cycle Simplified",
+          "description": "Greedy Net Elimination pruned 3 redundant circular debts",
+          "time": "4h ago",
+          "type": "system"
+        }
+      ],
+      "systemHealth": {
+        "status": "Operational & Optimal",
+        "databaseLatency": "11ms",
+        "memoryUsage": "320MB / 1024MB",
+        "cpuLoad": "14%",
+        "uptime": "99.98%"
+      },
+      "totalUsers": 10,
+      "totalGroups": 4,
+      "totalExpensesFormatted": "Rs. 1,24,800",
+      "pendingSettlements": 3,
+      "monthlyTrend": [
+        {
+          "month": "May 2026",
+          "amount": 18200,
+          "display": "Rs. 18,200",
+          "x": 25,
+          "y": 110
+        },
+        {
+          "month": "Jun 2026",
+          "amount": 24500,
+          "display": "Rs. 24,500",
+          "x": 80,
+          "y": 85
+        },
+        {
+          "month": "Jul 2026",
+          "amount": 19800,
+          "display": "Rs. 19,800",
+          "x": 140,
+          "y": 105
+        },
+        {
+          "month": "Aug 2026",
+          "amount": 32400,
+          "display": "Rs. 32,400",
+          "x": 200,
+          "y": 50
+        },
+        {
+          "month": "Sep 2026",
+          "amount": 28900,
+          "display": "Rs. 28,900",
+          "x": 260,
+          "y": 65
+        },
+        {
+          "month": "Oct 2026",
+          "amount": 31000,
+          "display": "Rs. 31,000",
+          "x": 315,
+          "y": 55
+        }
+      ],
+      "categoryBreakdown": [
+        {
+          "label": "Travel & Transportation",
+          "percent": 34,
+          "color": "#3b82f6",
+          "amount": "Rs. 42,800"
+        },
+        {
+          "label": "Food & Dining",
+          "percent": 29,
+          "color": "#10b981",
+          "amount": "Rs. 36,400"
+        },
+        {
+          "label": "Flat & Rent Utilities",
+          "percent": 21,
+          "color": "#8b5cf6",
+          "amount": "Rs. 26,000"
+        },
+        {
+          "label": "College & Project Materials",
+          "percent": 16,
+          "color": "#f59e0b",
+          "amount": "Rs. 19,600"
+        }
+      ],
+      "recentActivity": [
+        {
+          "id": "adm-act-1",
+          "action": "SETTLEMENT_RECORDED",
+          "title": "Debt Settlement Verified",
+          "description": "Demo User settled Rs. 2,350 with Aarav Gurung via eSewa",
+          "time": "12m ago",
+          "type": "settlement"
+        },
+        {
+          "id": "adm-act-2",
+          "action": "EXPENSE_CREATED",
+          "title": "New Expense Recorded",
+          "description": "Aarav Gurung added 'Paragliding Adventure' in Pokhara Trip",
+          "time": "45m ago",
+          "type": "expense"
+        },
+        {
+          "id": "adm-act-3",
+          "action": "GROUP_CREATED",
+          "title": "New Circle Provisioned",
+          "description": "Anita Maharjan created 'Office Lunch Club' circle",
+          "time": "2h ago",
+          "type": "group"
+        },
+        {
+          "id": "adm-act-4",
+          "action": "ALGORITHM_OPTIMIZED",
+          "title": "Graph Cycle Simplified",
+          "description": "Greedy Net Elimination pruned 3 redundant circular debts",
+          "time": "4h ago",
+          "type": "system"
+        }
+      ]
+    },
+    "users": [
+      {
+        "id": "demo-u-1",
+        "name": "Demo User",
+        "email": "demo@settlex.app",
+        "role": "user",
+        "tier": "student",
+        "isVerified": true,
+        "isSuspended": false,
+        "groupsCount": 3,
+        "totalSpent": "Rs. 24,600",
+        "createdAt": "2026-08-01T10:00:00Z"
+      },
+      {
+        "id": "demo-u-2",
+        "name": "Aarav Gurung",
+        "email": "aarav.gurung@example.com",
+        "role": "user",
+        "tier": "student",
+        "isVerified": true,
+        "isSuspended": false,
+        "groupsCount": 3,
+        "totalSpent": "Rs. 38,200",
+        "createdAt": "2026-08-05T12:30:00Z"
+      },
+      {
+        "id": "demo-u-3",
+        "name": "Pooja Thapa",
+        "email": "pooja.thapa@example.com",
+        "role": "user",
+        "tier": "student",
+        "isVerified": true,
+        "isSuspended": false,
+        "groupsCount": 2,
+        "totalSpent": "Rs. 15,400",
+        "createdAt": "2026-08-10T14:15:00Z"
+      },
+      {
+        "id": "demo-u-4",
+        "name": "Anita Maharjan",
+        "email": "anita.maharjan@example.com",
+        "role": "user",
+        "tier": "premium",
+        "isVerified": true,
+        "isSuspended": false,
+        "groupsCount": 2,
+        "totalSpent": "Rs. 19,800",
+        "createdAt": "2026-08-15T09:45:00Z"
+      },
+      {
+        "id": "demo-u-5",
+        "name": "Bikash Rai",
+        "email": "bikash.rai@example.com",
+        "role": "user",
+        "tier": "student",
+        "isVerified": false,
+        "isSuspended": false,
+        "groupsCount": 1,
+        "totalSpent": "Rs. 8,200",
+        "createdAt": "2026-08-20T16:20:00Z"
+      },
+      {
+        "id": "demo-u-6",
+        "name": "Manish Adhikari",
+        "email": "manish.adhikari@example.com",
+        "role": "user",
+        "tier": "enterprise",
+        "isVerified": true,
+        "isSuspended": false,
+        "groupsCount": 2,
+        "totalSpent": "Rs. 27,500",
+        "createdAt": "2026-08-25T11:10:00Z"
+      },
+      {
+        "id": "demo-u-7",
+        "name": "Kiran KC",
+        "email": "kiran.kc@example.com",
+        "role": "user",
+        "tier": "student",
+        "isVerified": true,
+        "isSuspended": false,
+        "groupsCount": 2,
+        "totalSpent": "Rs. 12,300",
+        "createdAt": "2026-08-28T15:00:00Z"
+      },
+      {
+        "id": "demo-u-8",
+        "name": "Dipesh Pandey",
+        "email": "dipesh.pandey@example.com",
+        "role": "user",
+        "tier": "free",
+        "isVerified": true,
+        "isSuspended": false,
+        "groupsCount": 1,
+        "totalSpent": "Rs. 4,500",
+        "createdAt": "2026-09-01T08:30:00Z"
+      },
+      {
+        "id": "demo-u-9",
+        "name": "Priya Shrestha",
+        "email": "priya.shrestha@example.com",
+        "role": "user",
+        "tier": "premium",
+        "isVerified": true,
+        "isSuspended": false,
+        "groupsCount": 2,
+        "totalSpent": "Rs. 16,700",
+        "createdAt": "2026-09-03T13:40:00Z"
+      },
+      {
+        "id": "demo-u-10",
+        "name": "Roshan Bhattarai",
+        "email": "roshan.bhattarai@example.com",
+        "role": "user",
+        "tier": "free",
+        "isVerified": true,
+        "isSuspended": true,
+        "groupsCount": 1,
+        "totalSpent": "Rs. 2,100",
+        "createdAt": "2026-09-05T17:15:00Z"
+      }
+    ],
+    "staff": [
+      {
+        "id": "demo-staff-root",
+        "name": "Demo User",
+        "email": "admin.guest@settlex.demo",
+        "role": "superadmin",
+        "permissions": [
+          "*"
+        ],
+        "isActive": true,
+        "designation": "System Administrator & Operations Lead",
+        "phone": "+977 9801234567",
+        "location": "Kathmandu, Nepal",
+        "createdAt": "2026-07-01T00:00:00Z"
+      }
+    ],
+    "systemLogs": {
+      "summary": {
+        "totalLogs": 28,
+        "securityEvents": 10,
+        "financialEvents": 12,
+        "groupEvents": 4,
+        "systemEvents": 2,
+        "activeOperatorsCount": 4
+      },
+      "logs": [
+        {
+          "id": "seed_log_1",
+          "action": "ADMIN_AUTHENTICATION",
+          "category": "SECURITY",
+          "severity": "INFO",
+          "operator": {
+            "id": "admin_root",
+            "name": "Demo User",
+            "email": "admin.guest@settlex.demo",
+            "role": "superadmin",
+            "type": "admin"
+          },
+          "target": {
+            "id": "admin_session_root",
+            "model": "AdminSession"
+          },
+          "details": {
+            "ip": "103.161.80.12",
+            "client": "Brave / Windows 11",
+            "location": "Kathmandu, Nepal"
+          },
+          "summary": "Root SuperAdmin authenticated successfully via credentials & biometric session key",
+          "timestamp": "2026-09-18T19:45:00Z",
+          "relativeTime": "15m ago",
+          "status": "SUCCESS"
+        },
+        {
+          "id": "seed_log_2",
+          "action": "ALGORITHM_EXECUTION",
+          "category": "FINANCIAL",
+          "severity": "INFO",
+          "operator": {
+            "id": "admin_root",
+            "name": "Demo User",
+            "email": "admin.guest@settlex.demo",
+            "role": "superadmin",
+            "type": "admin"
+          },
+          "target": {
+            "id": "demo-grp-1",
+            "model": "Group"
+          },
+          "details": {
+            "algorithm": "Greedy Net Elimination",
+            "group": "Pokhara Trip",
+            "transactionsBefore": 7,
+            "transactionsAfter": 2,
+            "efficiencyGain": "71.4%"
+          },
+          "summary": "Debt graph cycle optimization executed for Pokhara Trip (5 redundant edges dissolved)",
+          "timestamp": "2026-09-18T18:30:00Z",
+          "relativeTime": "1h ago",
+          "status": "SUCCESS"
+        },
+        {
+          "id": "seed_log_3",
+          "action": "SETTLEMENT_RECORDED",
+          "category": "FINANCIAL",
+          "severity": "INFO",
+          "operator": {
+            "id": "demo-u-1",
+            "name": "Demo User",
+            "email": "demo@settlex.app",
+            "role": "user",
+            "type": "user"
+          },
+          "target": {
+            "id": "adm-set-1",
+            "model": "Settlement"
+          },
+          "details": {
+            "amount": "Rs. 2,350",
+            "gateway": "eSewa Direct Settlement",
+            "recipient": "Aarav Gurung",
+            "group": "Pokhara Trip"
+          },
+          "summary": "Verified peer debt settlement between Demo User and Aarav Gurung",
+          "timestamp": "2026-09-18T17:50:00Z",
+          "relativeTime": "2h ago",
+          "status": "SUCCESS"
+        },
+        {
+          "id": "seed_log_4",
+          "action": "CREATE_GROUP",
+          "category": "GROUP",
+          "severity": "INFO",
+          "operator": {
+            "id": "demo-u-1",
+            "name": "Demo User",
+            "email": "demo@settlex.app",
+            "role": "user",
+            "type": "user"
+          },
+          "target": {
+            "id": "demo-grp-3",
+            "model": "Group"
+          },
+          "details": {
+            "name": "College Friends TU",
+            "membersCount": 8,
+            "baseCurrency": "NPR"
+          },
+          "summary": "Created new expense circle College Friends TU",
+          "timestamp": "2026-09-18T17:15:00Z",
+          "relativeTime": "3h ago",
+          "status": "SUCCESS"
+        },
+        {
+          "id": "seed_log_5",
+          "action": "UPDATE_SETTINGS",
+          "category": "SYSTEM",
+          "severity": "INFO",
+          "operator": {
+            "id": "admin_root",
+            "name": "Demo User",
+            "email": "admin.guest@settlex.demo",
+            "role": "superadmin",
+            "type": "admin"
+          },
+          "target": {
+            "id": "system_config_root",
+            "model": "Settings"
+          },
+          "details": {
+            "currency": "NPR",
+            "defaultOptimizationEngine": "greedy_net_elimination",
+            "autoSimplifyDebts": true
+          },
+          "summary": "Updated platform currency preference to NPR with integer paisa precision",
+          "timestamp": "2026-09-18T15:00:00Z",
+          "relativeTime": "5h ago",
+          "status": "SUCCESS"
+        },
+        {
+          "id": "seed_log_6",
+          "action": "SUSPEND_USER",
+          "category": "SECURITY",
+          "severity": "WARNING",
+          "operator": {
+            "id": "admin_root",
+            "name": "Demo User",
+            "email": "admin.guest@settlex.demo",
+            "role": "superadmin",
+            "type": "admin"
+          },
+          "target": {
+            "id": "demo-u-10",
+            "model": "User"
+          },
+          "details": {
+            "targetUser": "Roshan Bhattarai",
+            "reason": "Unusual rapid payment velocity across 6 groups"
+          },
+          "summary": "Security hold placed on Roshan Bhattarai for transaction verification",
+          "timestamp": "2026-09-18T12:00:00Z",
+          "relativeTime": "8h ago",
+          "status": "SUCCESS"
+        }
+      ]
+    },
+    "anomalies": {
+      "summary": {
+        "totalAnalyzed": 14,
+        "anomaliesCount": 4,
+        "severeCount": 2,
+        "elevatedCount": 1,
+        "moderateCount": 1,
+        "totalDisproportionPaisa": 9200000,
+        "totalDisproportionFormatted": "Rs. 92,000",
+        "averageDeviationPercent": 126,
+        "totalAdvisoriesDispatched": 1
+      },
+      "anomalies": [
+        {
+          "id": "seed_demo_user",
+          "user": {
+            "id": "demo-u-1",
+            "name": "Demo User",
+            "email": "demo@settlex.app",
+            "avatar": ""
+          },
+          "totalPaidPaisa": 6850000,
+          "totalPaidFormatted": "Rs. 68,500",
+          "expectedFairSharePaisa": 1950000,
+          "expectedFairShareFormatted": "Rs. 19,500",
+          "overspendPaisa": 4900000,
+          "overspendFormatted": "Rs. 49,000",
+          "overspendRatio": 3.51,
+          "overspendPercent": 251,
+          "zScore": 2.84,
+          "dominantCount": 3,
+          "totalGroupsCount": 4,
+          "severity": "CRITICAL",
+          "headline": "Demo User fronted 3.51x more than peer fair share across 4 active circles.",
+          "primaryFactors": [
+            "Covering >=50% of all expenses in 3 group(s)",
+            "Spending ratio is 3.51x of peer group benchmark (+251%)",
+            "Statistical anomaly with Z-Score of +2.84σ"
+          ],
+          "advisorySubject": "SettleX Financial Advisory: Disproportionate Cross-Group Spending Alert",
+          "advisoryDraft": "Dear Demo User,\n\nOur automated financial analysis on SettleX noticed that you have covered a substantial portion of group expenses recently.\n\nSummary of findings:\n- Total Amount Fronted: Rs. 68,500\n- Expected Circle Share: Rs. 19,500\n- Disproportionate Balance: Rs. 49,000 (3.51x peer average)\n- Primary Circles: Pokhara Trip, Roommates Koteshwor, College Friends TU\n\nTo prevent personal cashflow strain and encourage equitable group settling, we suggest requesting immediate settlement transfers from your co-members.",
+          "groupBreakdown": [
+            {
+              "groupId": "demo-grp-1",
+              "groupName": "Pokhara Trip",
+              "memberCount": 6,
+              "groupTotalFormatted": "Rs. 42,800",
+              "userPaidFormatted": "Rs. 32,000",
+              "peerAvgFormatted": "Rs. 7,133",
+              "sharePercent": 75,
+              "isDominant": true
+            },
+            {
+              "groupId": "demo-grp-2",
+              "groupName": "Roommates Koteshwor",
+              "memberCount": 4,
+              "groupTotalFormatted": "Rs. 39,600",
+              "userPaidFormatted": "Rs. 26,000",
+              "peerAvgFormatted": "Rs. 9,900",
+              "sharePercent": 66,
+              "isDominant": true
+            },
+            {
+              "groupId": "demo-grp-3",
+              "groupName": "College Friends TU",
+              "memberCount": 8,
+              "groupTotalFormatted": "Rs. 27,600",
+              "userPaidFormatted": "Rs. 10,500",
+              "peerAvgFormatted": "Rs. 3,450",
+              "sharePercent": 38,
+              "isDominant": false
+            }
+          ],
+          "advisoriesSentCount": 1
+        },
+        {
+          "id": "seed_aarav_gurung",
+          "user": {
+            "id": "demo-u-2",
+            "name": "Aarav Gurung",
+            "email": "aarav.gurung@nepalnet.com",
+            "avatar": ""
+          },
+          "totalPaidPaisa": 4200000,
+          "totalPaidFormatted": "Rs. 42,000",
+          "expectedFairSharePaisa": 1800000,
+          "expectedFairShareFormatted": "Rs. 18,000",
+          "overspendPaisa": 2400000,
+          "overspendFormatted": "Rs. 24,000",
+          "overspendRatio": 2.33,
+          "overspendPercent": 133,
+          "zScore": 1.82,
+          "dominantCount": 2,
+          "totalGroupsCount": 3,
+          "severity": "CRITICAL",
+          "headline": "Aarav Gurung fronted 2.33x more than peer fair share across 3 active circles.",
+          "primaryFactors": [
+            "Covering >=50% of all expenses in 2 group(s)",
+            "Spending ratio is 2.33x of peer group benchmark (+133%)",
+            "Statistical anomaly with Z-Score of +1.82σ"
+          ],
+          "advisorySubject": "SettleX Financial Advisory: High Spending Contribution Notice",
+          "advisoryDraft": "Dear Aarav Gurung,\n\nOur cross-group expense auditing detected that you have covered Rs. 42,000 across your active circles, while peer average contribution is Rs. 18,000.\n\nPlease initiate settlement reminders in SettleX so your friends can settle their balances.",
+          "groupBreakdown": [
+            {
+              "groupId": "demo-grp-1",
+              "groupName": "Pokhara Trip",
+              "memberCount": 6,
+              "groupTotalFormatted": "Rs. 42,800",
+              "userPaidFormatted": "Rs. 28,000",
+              "peerAvgFormatted": "Rs. 7,133",
+              "sharePercent": 65,
+              "isDominant": true
+            }
+          ],
+          "advisoriesSentCount": 0
+        },
+        {
+          "id": "seed_pooja_thapa",
+          "user": {
+            "id": "demo-u-3",
+            "name": "Pooja Thapa",
+            "email": "pooja.thapa@creative.np",
+            "avatar": ""
+          },
+          "totalPaidPaisa": 2950000,
+          "totalPaidFormatted": "Rs. 29,500",
+          "expectedFairSharePaisa": 1650000,
+          "expectedFairShareFormatted": "Rs. 16,500",
+          "overspendPaisa": 1300000,
+          "overspendFormatted": "Rs. 13,000",
+          "overspendRatio": 1.79,
+          "overspendPercent": 79,
+          "zScore": 1.45,
+          "dominantCount": 1,
+          "totalGroupsCount": 2,
+          "severity": "ELEVATED",
+          "headline": "Pooja Thapa fronted 1.79x peer average across 2 active groups.",
+          "primaryFactors": [
+            "Covering >=50% of all expenses in 1 group(s)",
+            "Spending ratio is 1.79x of peer group benchmark (+79%)"
+          ],
+          "advisorySubject": "SettleX Advisory: Group Expense Asymmetry Notice",
+          "advisoryDraft": "Dear Pooja Thapa,\n\nWe noticed you paid Rs. 29,500 across your circles, exceeding the peer benchmark by 79%. Consider settling or alternating purchases.",
+          "groupBreakdown": [
+            {
+              "groupId": "demo-grp-4",
+              "groupName": "Office Lunch Club",
+              "memberCount": 5,
+              "groupTotalFormatted": "Rs. 14,800",
+              "userPaidFormatted": "Rs. 9,500",
+              "peerAvgFormatted": "Rs. 2,960",
+              "sharePercent": 64,
+              "isDominant": true
+            }
+          ],
+          "advisoriesSentCount": 0
+        },
+        {
+          "id": "seed_roshan_shrestha",
+          "user": {
+            "id": "demo-u-10",
+            "name": "Roshan Bhattarai",
+            "email": "roshan.bhattarai@demo.np",
+            "avatar": ""
+          },
+          "totalPaidPaisa": 2100000,
+          "totalPaidFormatted": "Rs. 21,000",
+          "expectedFairSharePaisa": 1500000,
+          "expectedFairShareFormatted": "Rs. 15,000",
+          "overspendPaisa": 600000,
+          "overspendFormatted": "Rs. 6,000",
+          "overspendRatio": 1.4,
+          "overspendPercent": 40,
+          "zScore": 1.15,
+          "dominantCount": 0,
+          "totalGroupsCount": 2,
+          "severity": "MODERATE",
+          "headline": "Roshan Bhattarai shows moderate positive variance (1.40x peer average).",
+          "primaryFactors": [
+            "Spending ratio is 1.40x of peer group benchmark (+40%)"
+          ],
+          "advisorySubject": "SettleX Check-in: Group Expense Parity",
+          "advisoryDraft": "Dear Roshan Bhattarai,\n\nYour recent expense contributions are slightly higher than average in your circles. Keeping balances fresh is recommended.",
+          "groupBreakdown": [
+            {
+              "groupId": "demo-grp-4",
+              "groupName": "Office Lunch Club",
+              "memberCount": 5,
+              "groupTotalFormatted": "Rs. 14,800",
+              "userPaidFormatted": "Rs. 6,000",
+              "peerAvgFormatted": "Rs. 2,960",
+              "sharePercent": 41,
+              "isDominant": false
+            }
+          ],
+          "advisoriesSentCount": 0
+        }
+      ]
+    },
+    "optimization": {
+      "benchmark": {
+        "kpis": {
+          "totalGroupsSimulated": 42,
+          "transactionsPreOptimization": 348,
+          "transactionsPostOptimization": 89,
+          "redundancyReductionPercent": 74.4,
+          "cashflowFrictionReducedPaisa": 28400000,
+          "cashflowFrictionFormatted": "Rs. 2,84,000",
+          "averageComputeTimeMs": 1.42,
+          "theoreticalComplexity": "O(V + E) ≈ 10-50 ops"
+        }
+      },
+      "sandboxResults": {
+        "members": [
+          {
+            "id": "u_demo",
+            "name": "Demo User"
+          },
+          {
+            "id": "u_aarav",
+            "name": "Aarav Gurung"
+          },
+          {
+            "id": "u_pooja",
+            "name": "Pooja Thapa"
+          }
+        ],
+        "initialDebts": [
+          {
+            "from": "u_demo",
+            "to": "u_aarav",
+            "amount": 3000,
+            "amountFormatted": "Rs. 3,000"
+          },
+          {
+            "from": "u_aarav",
+            "to": "u_pooja",
+            "amount": 3000,
+            "amountFormatted": "Rs. 3,000"
+          },
+          {
+            "from": "u_pooja",
+            "to": "u_demo",
+            "amount": 3000,
+            "amountFormatted": "Rs. 3,000"
+          }
+        ],
+        "cycleCancelledDebts": [],
+        "greedyOptimized": [],
+        "netBalances": [
+          {
+            "memberId": "u_demo",
+            "name": "Demo User",
+            "netBalance": 0,
+            "formattedNet": "Rs. 0"
+          },
+          {
+            "memberId": "u_aarav",
+            "name": "Aarav Gurung",
+            "netBalance": 0,
+            "formattedNet": "Rs. 0"
+          },
+          {
+            "memberId": "u_pooja",
+            "name": "Pooja Thapa",
+            "netBalance": 0,
+            "formattedNet": "Rs. 0"
+          }
+        ]
+      }
+    },
+    "settings": {
+      "platformName": "SettleX Expense Management System",
+      "primaryCurrency": "NPR",
+      "currencySymbol": "Rs.",
+      "defaultOptimizationEngine": "greedy_net_elimination",
+      "autoSimplifyDebts": true,
+      "maintenanceMode": false,
+      "maintenanceNotice": "Scheduled database optimization in progress. New submissions paused.",
+      "security": {
+        "enforceTwoFactor": false,
+        "sessionTimeoutHours": 24,
+        "maxFailedAttempts": 5,
+        "auditLogRetentionDays": 90,
+        "allowPublicRegistration": true
+      },
+      "anomalyRules": {
+        "enableAutoDetection": true,
+        "spendingRatioThreshold": 1.5,
+        "minimumGroupSize": 3,
+        "minimumExpenseVolumeNpr": 5000,
+        "autoSendAdvisories": false
+      }
+    },
+    "settlements": {
+      "stats": {
+        "totalPendingDebtPaisa": 1015000,
+        "totalPendingDebtFormatted": "Rs. 10,150",
+        "totalSettlementsCount": 3,
+        "rawTransactionsCount": 8,
+        "optimizedTransactionsCount": 3,
+        "reductionPercent": 62.5
+      },
+      "settlements": [
+        {
+          "id": "settle-1",
+          "groupId": "group-pokhara-trip",
+          "groupName": "Pokhara Trekking Expedition",
+          "from": {
+            "id": "demo-u-2",
+            "name": "Aarav Gurung",
+            "email": "aarav.gurung@demo.com"
+          },
+          "to": {
+            "id": "demo-u-1",
+            "name": "Demo User",
+            "email": "demo@settlex.app"
+          },
+          "amountPaisa": 425000,
+          "amountFormatted": "Rs. 4,250",
+          "status": "PENDING",
+          "createdAt": "2026-09-18T09:30:00Z",
+          "optimizedFromCount": 3
+        },
+        {
+          "id": "settle-2",
+          "groupId": "group-pokhara-trip",
+          "groupName": "Pokhara Trekking Expedition",
+          "from": {
+            "id": "demo-u-3",
+            "name": "Priya Thapa",
+            "email": "priya.thapa@demo.com"
+          },
+          "to": {
+            "id": "demo-u-1",
+            "name": "Demo User",
+            "email": "demo@settlex.app"
+          },
+          "amountPaisa": 380000,
+          "amountFormatted": "Rs. 3,800",
+          "status": "PENDING",
+          "createdAt": "2026-09-18T10:15:00Z",
+          "optimizedFromCount": 2
+        },
+        {
+          "id": "settle-3",
+          "groupId": "group-roommates-koteshwor",
+          "groupName": "Roommates Koteshwor Flat",
+          "from": {
+            "id": "demo-u-4",
+            "name": "Bikash Rai",
+            "email": "bikash.rai@demo.com"
+          },
+          "to": {
+            "id": "demo-u-5",
+            "name": "Anjali Shrestha",
+            "email": "anjali.shrestha@demo.com"
+          },
+          "amountPaisa": 210000,
+          "amountFormatted": "Rs. 2,100",
+          "status": "PENDING",
+          "createdAt": "2026-09-17T16:00:00Z",
+          "optimizedFromCount": 3
+        }
+      ],
+      "userBalances": [
+        {
+          "userId": "demo-u-1",
+          "userName": "Demo User",
+          "userEmail": "demo@settlex.app",
+          "netBalancePaisa": 805000,
+          "netBalanceFormatted": "+Rs. 8,050",
+          "status": "creditor"
+        },
+        {
+          "userId": "demo-u-5",
+          "userName": "Anjali Shrestha",
+          "userEmail": "anjali.shrestha@demo.com",
+          "netBalancePaisa": 210000,
+          "netBalanceFormatted": "+Rs. 2,100",
+          "status": "creditor"
+        },
+        {
+          "userId": "demo-u-4",
+          "userName": "Bikash Rai",
+          "userEmail": "bikash.rai@demo.com",
+          "netBalancePaisa": -210000,
+          "netBalanceFormatted": "-Rs. 2,100",
+          "status": "debtor"
+        },
+        {
+          "userId": "demo-u-3",
+          "userName": "Priya Thapa",
+          "userEmail": "priya.thapa@demo.com",
+          "netBalancePaisa": -380000,
+          "netBalanceFormatted": "-Rs. 3,800",
+          "status": "debtor"
+        },
+        {
+          "userId": "demo-u-2",
+          "userName": "Aarav Gurung",
+          "userEmail": "aarav.gurung@demo.com",
+          "netBalancePaisa": -425000,
+          "netBalanceFormatted": "-Rs. 4,250",
+          "status": "debtor"
+        }
+      ]
+    },
+    "analytics": {
+      "kpis": {
+        "totalVolumeFormatted": "Rs. 1,24,800",
+        "totalTransactions": 48,
+        "averageExpenseFormatted": "Rs. 2,600",
+        "activeUsersCount": 14,
+        "totalUsersCount": 18,
+        "activeCirclesCount": 4,
+        "debtReductionPercent": 62.5,
+        "rawEdgesEliminated": 15,
+        "algorithmExecutionTimeMs": 4.2,
+        "totalOptimizedAmountFormatted": "Rs. 58,400"
+      },
+      "monthlyTrend": [
+        {
+          "month": "May",
+          "amount": 18200,
+          "amountFormatted": "Rs. 18,200",
+          "x": 40,
+          "y": 120
+        },
+        {
+          "month": "Jun",
+          "amount": 24500,
+          "amountFormatted": "Rs. 24,500",
+          "x": 120,
+          "y": 95
+        },
+        {
+          "month": "Jul",
+          "amount": 19800,
+          "amountFormatted": "Rs. 19,800",
+          "x": 200,
+          "y": 115
+        },
+        {
+          "month": "Aug",
+          "amount": 32400,
+          "amountFormatted": "Rs. 32,400",
+          "x": 280,
+          "y": 65
+        },
+        {
+          "month": "Sep",
+          "amount": 28900,
+          "amountFormatted": "Rs. 28,900",
+          "x": 360,
+          "y": 80
+        },
+        {
+          "month": "Oct",
+          "amount": 31000,
+          "amountFormatted": "Rs. 31,000",
+          "x": 440,
+          "y": 70
+        }
+      ],
+      "categoryBreakdown": [
+        {
+          "name": "Travel & Transportation",
+          "amount": 42800,
+          "amountFormatted": "Rs. 42,800",
+          "percentage": 34,
+          "color": "#3b82f6"
+        },
+        {
+          "name": "Food & Dining",
+          "amount": 36400,
+          "amountFormatted": "Rs. 36,400",
+          "percentage": 29,
+          "color": "#10b981"
+        },
+        {
+          "name": "Flat & Rent Utilities",
+          "amount": 26000,
+          "amountFormatted": "Rs. 26,000",
+          "percentage": 21,
+          "color": "#8b5cf6"
+        },
+        {
+          "name": "Activities & Leisure",
+          "amount": 19600,
+          "amountFormatted": "Rs. 19,600",
+          "percentage": 16,
+          "color": "#f59e0b"
+        }
+      ],
+      "splitStrategyDistribution": [
+        {
+          "name": "Equal Split",
+          "count": 32,
+          "percentage": 67,
+          "color": "#3b82f6"
+        },
+        {
+          "name": "Exact Unequal",
+          "count": 11,
+          "percentage": 23,
+          "color": "#10b981"
+        },
+        {
+          "name": "Percentage Split",
+          "count": 5,
+          "percentage": 10,
+          "color": "#8b5cf6"
+        }
+      ],
+      "topUsers": [
+        {
+          "id": "demo-u-1",
+          "name": "Demo User",
+          "email": "demo@settlex.app",
+          "volumeFormatted": "Rs. 68,500",
+          "count": 18
+        },
+        {
+          "id": "demo-u-5",
+          "name": "Anjali Shrestha",
+          "email": "anjali.shrestha@demo.com",
+          "volumeFormatted": "Rs. 24,300",
+          "count": 9
+        },
+        {
+          "id": "demo-u-2",
+          "name": "Aarav Gurung",
+          "email": "aarav.gurung@demo.com",
+          "volumeFormatted": "Rs. 18,200",
+          "count": 7
+        },
+        {
+          "id": "demo-u-3",
+          "name": "Priya Thapa",
+          "email": "priya.thapa@demo.com",
+          "volumeFormatted": "Rs. 13,800",
+          "count": 5
+        }
+      ],
+      "topCircles": [
+        {
+          "id": "group-pokhara-trip",
+          "name": "Pokhara Trekking Expedition",
+          "volumeFormatted": "Rs. 42,800",
+          "memberCount": 6
+        },
+        {
+          "id": "group-roommates-koteshwor",
+          "name": "Roommates Koteshwor Flat",
+          "volumeFormatted": "Rs. 39,600",
+          "memberCount": 4
+        },
+        {
+          "id": "group-tu-bca-project",
+          "name": "TU BCA Final Defense Project",
+          "volumeFormatted": "Rs. 27,600",
+          "memberCount": 5
+        },
+        {
+          "id": "group-thamel-tech",
+          "name": "Kathmandu Tech Summit Trip",
+          "volumeFormatted": "Rs. 14,800",
+          "memberCount": 4
+        }
+      ]
+    },
+    "notifications": {
+      "summary": {
+        "total": 6,
+        "unread": 3,
+        "critical": 1,
+        "warning": 1,
+        "financial": 2,
+        "security": 1,
+        "anomaly": 1,
+        "system": 1
+      },
+      "notifications": [
+        {
+          "id": "notif-1",
+          "title": "Repeated Authentication Failures Detected",
+          "message": "Endpoint /api/admin/login encountered 5 consecutive bad credentials from IP 103.145.72.10 (Kathmandu Subnet). Rate limiter temporary block engaged.",
+          "category": "SECURITY",
+          "severity": "CRITICAL",
+          "actionTab": "system-logs",
+          "actionLabel": "Inspect Audit Stream",
+          "details": {
+            "ip": "103.145.72.10",
+            "location": "Kathmandu, NP",
+            "attempts": 5
+          },
+          "read": false,
+          "createdAt": "2026-09-19T09:44:37.944Z"
+        },
+        {
+          "id": "notif-2",
+          "title": "Severe Outlier Expense Ratio Identified",
+          "message": "Heuristics flagged Demo User fronting 3.4x peer fair share across 3 active circles (\"Design Studio Baneshwor\", \"Pokhara Trekking Expedition\"). Overspend threshold exceeded.",
+          "category": "ANOMALY",
+          "severity": "WARNING",
+          "actionTab": "anomaly-detection",
+          "actionLabel": "Review Anomaly Profile",
+          "details": {
+            "user": "Demo User",
+            "ratio": 3.4,
+            "groupsCount": 3
+          },
+          "read": false,
+          "createdAt": "2026-09-19T09:14:37.957Z"
+        },
+        {
+          "id": "notif-3",
+          "title": "High-Value Settlement Recorded",
+          "message": "Direct payment of Rs. 45,000 recorded in \"Pokhara Trekking Expedition\" between Aarav Gurung and Pooja Thapa verified with eSewa reference #ESW-99214.",
+          "category": "FINANCIAL",
+          "severity": "INFO",
+          "actionTab": "settlements",
+          "actionLabel": "View Settlement Details",
+          "details": {
+            "group": "Pokhara Trekking Expedition",
+            "amount": "Rs. 45,000",
+            "gateway": "eSewa"
+          },
+          "read": false,
+          "createdAt": "2026-09-19T07:59:37.957Z"
+        },
+        {
+          "id": "notif-4",
+          "title": "Algorithmic Graph Simplification Executed",
+          "message": "Automated greedy balance cancellation resolved 18 cyclic group debts into 6 minimal net payments across \"Kathmandu Tech Summit Trip\", decreasing transaction friction by 66.7%.",
+          "category": "SYSTEM",
+          "severity": "SUCCESS",
+          "actionTab": "debt-optimization",
+          "actionLabel": "Open Debt Sandbox",
+          "details": {
+            "edgesEliminated": 12,
+            "executionTime": "3.8ms"
+          },
+          "read": true,
+          "createdAt": "2026-09-19T03:59:37.957Z"
+        },
+        {
+          "id": "notif-5",
+          "title": "New Group Circle Formed",
+          "message": "User Anjali Shrestha established \"Roommates Koteshwor Flat\" with 4 members. Default NPR currency and equal split strategy initialized.",
+          "category": "GROUP",
+          "severity": "INFO",
+          "actionTab": "groups",
+          "actionLabel": "View Group Circles",
+          "details": {
+            "creator": "Anjali Shrestha",
+            "members": 4
+          },
+          "read": true,
+          "createdAt": "2026-09-18T21:59:37.957Z"
+        },
+        {
+          "id": "notif-6",
+          "title": "Database Daily Maintenance Window Completed",
+          "message": "MongoDB indices compacted and audit log partitions rotated successfully. Peak memory footprint reduced by 14.2%.",
+          "category": "SYSTEM",
+          "severity": "INFO",
+          "actionTab": "system-logs",
+          "actionLabel": "View Maintenance Logs",
+          "details": {
+            "duration": "42s",
+            "freedMemory": "14.2%"
+          },
+          "read": true,
+          "createdAt": "2026-09-18T09:59:37.957Z"
+        }
+      ]
+    },
+    "profile": {
+      "id": "guest_admin_demo",
+      "name": "Guest Administrator",
+      "email": "admin.guest@settlex.demo",
+      "role": "superadmin",
+      "designation": "Platform Governance Lead",
+      "phone": "+977 9801234567",
+      "bio": "Platform governance, debt optimization heuristics, and financial telemetry oversight in guest preview mode.",
+      "avatar": "",
+      "permissions": [
+        "*"
+      ],
+      "privileges": [
+        "MANAGE_USERS",
+        "MANAGE_EXPENSES",
+        "MANAGE_GROUPS",
+        "VIEW_AUDIT_LOGS",
+        "MANAGE_SETTINGS",
+        "ANOMALY_DETECTION",
+        "DEBT_OPTIMIZATION"
+      ],
+      "currencyPreference": "NPR",
+      "isVerified": true,
+      "isSuspended": false,
+      "createdAt": "2025-01-15T09:00:00Z",
+      "lastLoginAt": "2026-09-19T09:59:37.957Z"
+    },
+    "groups": [
+      {
+        "id": "group-pokhara-trip",
+        "name": "Pokhara Trekking Expedition",
+        "title": "Pokhara Trekking Expedition",
+        "description": "BCA 8th semester graduation adventure to Annapurna Base Camp & Pokhara Lakeside",
+        "category": "Travel & Trips",
+        "currency": "NPR",
+        "memberCount": 6,
+        "members": [
+          {
+            "id": "demo-u-1",
+            "name": "Demo User",
+            "email": "demo@settlex.app",
+            "role": "admin"
+          },
+          {
+            "id": "demo-u-2",
+            "name": "Aarav Gurung",
+            "email": "aarav.gurung@demo.com",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-3",
+            "name": "Priya Thapa",
+            "email": "priya.thapa@demo.com",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-4",
+            "name": "Bikash Rai",
+            "email": "bikash.rai@demo.com",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-5",
+            "name": "Anjali Shrestha",
+            "email": "anjali.shrestha@demo.com",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-6",
+            "name": "Rohan Shrestha",
+            "email": "rohan.shrestha@demo.com",
+            "role": "member"
+          }
+        ],
+        "expensesCount": 4,
+        "totalExpensesCount": 4,
+        "totalAmountPaisa": 4280000,
+        "totalAmountFormatted": "Rs. 42,800",
+        "createdBy": {
+          "id": "demo-u-1",
+          "name": "Demo User"
+        },
+        "createdAt": "2026-09-10T08:00:00Z",
+        "expenses": [
+          {
+            "id": "exp-101",
+            "title": "Hotel Barahi Lakeside Accommodation",
+            "description": "Hotel Barahi Lakeside Accommodation",
+            "amountPaisa": 1850000,
+            "amountFormatted": "Rs. 18,500",
+            "splitType": "EQUAL",
+            "paidByName": "Demo User",
+            "paidBy": {
+              "id": "demo-u-1",
+              "name": "Demo User"
+            },
+            "createdAt": "2026-09-12T14:30:00Z"
+          },
+          {
+            "id": "exp-102",
+            "title": "Scorpio 4WD Jeep Rental Nayapul",
+            "description": "Scorpio 4WD Jeep Rental Nayapul",
+            "amountPaisa": 1200000,
+            "amountFormatted": "Rs. 12,000",
+            "splitType": "EQUAL",
+            "paidByName": "Demo User",
+            "paidBy": {
+              "id": "demo-u-1",
+              "name": "Demo User"
+            },
+            "createdAt": "2026-09-13T07:15:00Z"
+          },
+          {
+            "id": "exp-103",
+            "title": "ACAP Trekking Entry Permits",
+            "description": "ACAP Trekking Entry Permits",
+            "amountPaisa": 630000,
+            "amountFormatted": "Rs. 6,300",
+            "splitType": "EQUAL",
+            "paidByName": "Aarav Gurung",
+            "paidBy": {
+              "id": "demo-u-2",
+              "name": "Aarav Gurung"
+            },
+            "createdAt": "2026-09-13T11:00:00Z"
+          },
+          {
+            "id": "exp-104",
+            "title": "Lakeside Feast & Farewell Dinner",
+            "description": "Lakeside Feast & Farewell Dinner",
+            "amountPaisa": 600000,
+            "amountFormatted": "Rs. 6,000",
+            "splitType": "EQUAL",
+            "paidByName": "Priya Thapa",
+            "paidBy": {
+              "id": "demo-u-3",
+              "name": "Priya Thapa"
+            },
+            "createdAt": "2026-09-15T20:00:00Z"
+          }
+        ]
+      },
+      {
+        "id": "group-roommates-koteshwor",
+        "name": "Roommates Koteshwor Flat",
+        "title": "Roommates Koteshwor Flat",
+        "description": "Shared 3BHK flat rental, electricity, water tank, and fiber internet bills",
+        "category": "Home & Rent",
+        "currency": "NPR",
+        "memberCount": 4,
+        "members": [
+          {
+            "id": "demo-u-1",
+            "name": "Demo User",
+            "email": "demo@settlex.app",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-4",
+            "name": "Bikash Rai",
+            "email": "bikash.rai@demo.com",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-5",
+            "name": "Anjali Shrestha",
+            "email": "anjali.shrestha@demo.com",
+            "role": "admin"
+          },
+          {
+            "id": "demo-u-7",
+            "name": "Dipesh Joshi",
+            "email": "dipesh.joshi@demo.com",
+            "role": "member"
+          }
+        ],
+        "expensesCount": 3,
+        "totalExpensesCount": 3,
+        "totalAmountPaisa": 3960000,
+        "totalAmountFormatted": "Rs. 39,600",
+        "createdBy": {
+          "id": "demo-u-5",
+          "name": "Anjali Shrestha"
+        },
+        "createdAt": "2026-09-01T09:00:00Z",
+        "expenses": [
+          {
+            "id": "exp-201",
+            "title": "Flat Monthly Rent (Bhadra)",
+            "description": "Flat Monthly Rent (Bhadra)",
+            "amountPaisa": 3000000,
+            "amountFormatted": "Rs. 30,000",
+            "splitType": "EQUAL",
+            "paidByName": "Anjali Shrestha",
+            "paidBy": {
+              "id": "demo-u-5",
+              "name": "Anjali Shrestha"
+            },
+            "createdAt": "2026-09-02T10:00:00Z"
+          },
+          {
+            "id": "exp-202",
+            "title": "WorldLink Fiber 300Mbps Renewal",
+            "description": "WorldLink Fiber 300Mbps Renewal",
+            "amountPaisa": 360000,
+            "amountFormatted": "Rs. 3,600",
+            "splitType": "EQUAL",
+            "paidByName": "Bikash Rai",
+            "paidBy": {
+              "id": "demo-u-4",
+              "name": "Bikash Rai"
+            },
+            "createdAt": "2026-09-05T15:30:00Z"
+          },
+          {
+            "id": "exp-203",
+            "title": "Deep Well Water Tanker (5000L)",
+            "description": "Deep Well Water Tanker (5000L)",
+            "amountPaisa": 600000,
+            "amountFormatted": "Rs. 6,000",
+            "splitType": "EQUAL",
+            "paidByName": "Demo User",
+            "paidBy": {
+              "id": "demo-u-1",
+              "name": "Demo User"
+            },
+            "createdAt": "2026-09-08T11:45:00Z"
+          }
+        ]
+      },
+      {
+        "id": "group-tu-bca-project",
+        "name": "TU BCA Final Defense Project",
+        "title": "TU BCA Final Defense Project",
+        "description": "Shared expenses for project cloud infra, documentation binding, research & defense lunch",
+        "category": "Education & Tech",
+        "currency": "NPR",
+        "memberCount": 5,
+        "members": [
+          {
+            "id": "demo-u-1",
+            "name": "Demo User",
+            "email": "demo@settlex.app",
+            "role": "admin"
+          },
+          {
+            "id": "demo-u-2",
+            "name": "Aarav Gurung",
+            "email": "aarav.gurung@demo.com",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-8",
+            "name": "Sushmita KC",
+            "email": "sushmita.kc@demo.com",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-9",
+            "name": "Bibek Chaudhary",
+            "email": "bibek.chaudhary@demo.com",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-10",
+            "name": "Pooja Karki",
+            "email": "pooja.karki@demo.com",
+            "role": "member"
+          }
+        ],
+        "expensesCount": 3,
+        "totalExpensesCount": 3,
+        "totalAmountPaisa": 2760000,
+        "totalAmountFormatted": "Rs. 27,600",
+        "createdBy": {
+          "id": "demo-u-1",
+          "name": "Demo User"
+        },
+        "createdAt": "2026-09-05T12:00:00Z",
+        "expenses": [
+          {
+            "id": "exp-301",
+            "title": "AWS Cloud EC2 & MongoDB Atlas Hosting",
+            "description": "AWS Cloud EC2 & MongoDB Atlas Hosting",
+            "amountPaisa": 1250000,
+            "amountFormatted": "Rs. 12,500",
+            "splitType": "EQUAL",
+            "paidByName": "Demo User",
+            "paidBy": {
+              "id": "demo-u-1",
+              "name": "Demo User"
+            },
+            "createdAt": "2026-09-06T14:00:00Z"
+          },
+          {
+            "id": "exp-302",
+            "title": "Thesis Hardcover Binding & Printing",
+            "description": "Thesis Hardcover Binding & Printing",
+            "amountPaisa": 850000,
+            "amountFormatted": "Rs. 8,500",
+            "splitType": "EQUAL",
+            "paidByName": "Sushmita KC",
+            "paidBy": {
+              "id": "demo-u-8",
+              "name": "Sushmita KC"
+            },
+            "createdAt": "2026-09-14T16:20:00Z"
+          },
+          {
+            "id": "exp-303",
+            "title": "Pre-Defense Mock Presentation Snacks",
+            "description": "Pre-Defense Mock Presentation Snacks",
+            "amountPaisa": 660000,
+            "amountFormatted": "Rs. 6,600",
+            "splitType": "EQUAL",
+            "paidByName": "Bibek Chaudhary",
+            "paidBy": {
+              "id": "demo-u-9",
+              "name": "Bibek Chaudhary"
+            },
+            "createdAt": "2026-09-16T17:45:00Z"
+          }
+        ]
+      },
+      {
+        "id": "group-thamel-tech",
+        "name": "Kathmandu Tech Summit Trip",
+        "title": "Kathmandu Tech Summit Trip",
+        "description": "Conference tickets, team buffet dinner and shared taxi fares in Kathmandu",
+        "category": "Work & Professional",
+        "currency": "NPR",
+        "memberCount": 4,
+        "members": [
+          {
+            "id": "demo-u-1",
+            "name": "Demo User",
+            "email": "demo@settlex.app",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-2",
+            "name": "Aarav Gurung",
+            "email": "aarav.gurung@demo.com",
+            "role": "member"
+          },
+          {
+            "id": "demo-u-5",
+            "name": "Anjali Shrestha",
+            "email": "anjali.shrestha@demo.com",
+            "role": "admin"
+          },
+          {
+            "id": "demo-u-7",
+            "name": "Dipesh Joshi",
+            "email": "dipesh.joshi@demo.com",
+            "role": "member"
+          }
+        ],
+        "expensesCount": 2,
+        "totalExpensesCount": 2,
+        "totalAmountPaisa": 1480000,
+        "totalAmountFormatted": "Rs. 14,800",
+        "createdBy": {
+          "id": "demo-u-5",
+          "name": "Anjali Shrestha"
+        },
+        "createdAt": "2026-09-12T10:00:00Z",
+        "expenses": [
+          {
+            "id": "exp-401",
+            "title": "Conference Registration Delegate Passes",
+            "description": "Conference Registration Delegate Passes",
+            "amountPaisa": 1000000,
+            "amountFormatted": "Rs. 10,000",
+            "splitType": "EQUAL",
+            "paidByName": "Anjali Shrestha",
+            "paidBy": {
+              "id": "demo-u-5",
+              "name": "Anjali Shrestha"
+            },
+            "createdAt": "2026-09-13T09:00:00Z"
+          },
+          {
+            "id": "exp-402",
+            "title": "Thamel Rooftop Networking Dinner",
+            "description": "Thamel Rooftop Networking Dinner",
+            "amountPaisa": 480000,
+            "amountFormatted": "Rs. 4,800",
+            "splitType": "EQUAL",
+            "paidByName": "Dipesh Joshi",
+            "paidBy": {
+              "id": "demo-u-7",
+              "name": "Dipesh Joshi"
+            },
+            "createdAt": "2026-09-13T21:30:00Z"
+          }
+        ]
+      }
+    ]
+  }
+}

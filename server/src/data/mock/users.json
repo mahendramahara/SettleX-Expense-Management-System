@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Suman Sharma",
+    "email": "suman.sharma@example.com",
+    "password": "Password123!",
+    "role": "user",
+    "tier": "premium",
+    "isVerified": true,
+    "isSuspended": false,
+    "phone": "+977 9841234567",
+    "privileges": ["group:create", "expense:create", "settlement:create"]
+  },
+  {
+    "name": "Aarav Gurung",
+    "email": "aarav.gurung@example.com",
+    "password": "Password123!",
+    "role": "user",
+    "tier": "free",
+    "isVerified": true,
+    "isSuspended": false,
+    "phone": "+977 9851234568",
+    "privileges": ["group:create", "expense:create", "settlement:create"]
+  },
+  {
+    "name": "Pooja Thapa",
+    "email": "pooja.thapa@example.com",
+    "password": "Password123!",
+    "role": "user",
+    "tier": "student",
+    "isVerified": true,
+    "isSuspended": false,
+    "phone": "+977 9861234569",
+    "privileges": ["group:create", "expense:create", "settlement:create"]
+  },
+  {
+    "name": "Anita Shrestha",
+    "email": "anita.shrestha@example.com",
+    "password": "Password123!",
+    "role": "user",
+    "tier": "free",
+    "isVerified": true,
+    "isSuspended": false,
+    "phone": "+977 9801234570",
+    "privileges": ["group:create", "expense:create", "settlement:create"]
+  },
+  {
+    "name": "Bikash Adhikari",
+    "email": "bikash.adhikari@example.com",
+    "password": "Password123!",
+    "role": "user",
+    "tier": "free",
+    "isVerified": true,
+    "isSuspended": false,
+    "phone": "+977 9811234571",
+    "privileges": ["group:create", "expense:create", "settlement:create"]
+  },
+  {
+    "name": "Rohan Shrestha",
+    "email": "rohan.shrestha@example.com",
+    "password": "Password123!",
+    "role": "user",
+    "tier": "free",
+    "isVerified": true,
+    "isSuspended": false,
+    "phone": "+977 9821234572",
+    "privileges": ["group:create", "expense:create", "settlement:create"]
+  }
+]

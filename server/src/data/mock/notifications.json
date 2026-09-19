@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Repeated Authentication Failures Detected",
+    "message": "Endpoint /api/admin/login encountered 5 consecutive bad credentials from IP 103.145.72.10 (Kathmandu Subnet). Rate limiter temporary block engaged.",
+    "category": "SECURITY",
+    "severity": "CRITICAL",
+    "actionTab": "system-logs",
+    "actionLabel": "Inspect Audit Stream",
+    "details": {
+      "ip": "103.145.72.10",
+      "location": "Kathmandu, NP",
+      "attempts": 5
+    },
+    "read": false
+  },
+  {
+    "title": "Severe Outlier Expense Ratio Identified",
+    "message": "Heuristics flagged Demo User fronting 3.4x peer fair share across active circles. Overspend threshold exceeded.",
+    "category": "ANOMALY",
+    "severity": "WARNING",
+    "actionTab": "anomaly-detection",
+    "actionLabel": "Review Anomaly Profile",
+    "details": {
+      "user": "Demo User",
+      "ratio": 3.4,
+      "groupsCount": 3
+    },
+    "read": false
+  },
+  {
+    "title": "High-Value Settlement Recorded",
+    "message": "Direct payment of Rs. 45,000 recorded in Pokhara Trip between Aarav Gurung and Pooja Thapa verified with eSewa reference #ESW-99214.",
+    "category": "FINANCIAL",
+    "severity": "INFO",
+    "actionTab": "settlements",
+    "actionLabel": "View Settlement Details",
+    "details": {
+      "group": "Pokhara Trip",
+      "amount": "Rs. 45,000",
+      "method": "eSewa"
+    },
+    "read": false
+  },
+  {
+    "title": "Algorithmic Graph Simplification Executed",
+    "message": "Automated greedy balance cancellation resolved 18 cyclic group debts into 6 minimal net payments across circles, decreasing transaction friction by 66.7%.",
+    "category": "SYSTEM",
+    "severity": "SUCCESS",
+    "actionTab": "debt-optimization",
+    "actionLabel": "Open Sandbox",
+    "details": {
+      "rawTransactions": 18,
+      "reducedTo": 6,
+      "efficiencyGain": "66.7%"
+    },
+    "read": true
+  },
+  {
+    "title": "Staff Access Delegation Modified",
+    "message": "Root administrator updated RBAC permissions for staff member.",
+    "category": "SECURITY",
+    "severity": "INFO",
+    "actionTab": "admins",
+    "actionLabel": "Check Staff Permissions",
+    "details": {
+      "target": "Pooja Thapa",
+      "role": "moderator"
+    },
+    "read": true
+  },
+  {
+    "title": "Ledger Balancing Check Complete",
+    "message": "System audit confirmed 100% zero-sum ledger integrity across all active expense groups. No reconciliation discrepancies found.",
+    "category": "FINANCIAL",
+    "severity": "SUCCESS",
+    "actionTab": "analytics",
+    "actionLabel": "Review Metrics",
+    "details": {
+      "groupsChecked": 8,
+      "status": "RECONCILED"
+    },
+    "read": true
+  }
+]
