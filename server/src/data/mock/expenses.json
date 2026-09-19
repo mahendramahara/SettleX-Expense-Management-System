@@ -1,0 +1,82 @@
+[
+  {
+    "groupName": "Pokhara Trip",
+    "title": "Lakeside Hotel Booking",
+    "amountPaisa": 1500000,
+    "paidByEmail": "suman.sharma@example.com",
+    "splitType": "EQUAL",
+    "category": "Accommodation"
+  },
+  {
+    "groupName": "Pokhara Trip",
+    "title": "Phewa Lake Boating & Snacks",
+    "amountPaisa": 420000,
+    "paidByEmail": "aarav.gurung@example.com",
+    "splitType": "EQUAL",
+    "category": "Entertainment"
+  },
+  {
+    "groupName": "Pokhara Trip",
+    "title": "Sarangkot Vehicle Rental & Fuel",
+    "amountPaisa": 480000,
+    "paidByEmail": "pooja.thapa@example.com",
+    "splitType": "EQUAL",
+    "category": "Transportation"
+  },
+  {
+    "groupName": "Pokhara Trip",
+    "title": "Lakeside Thakali Dinner",
+    "amountPaisa": 360000,
+    "paidByEmail": "rohan.shrestha@example.com",
+    "splitType": "EQUAL",
+    "category": "Food"
+  },
+  {
+    "groupName": "Roommates",
+    "title": "Monthly Flat Rent",
+    "amountPaisa": 2200000,
+    "paidByEmail": "suman.sharma@example.com",
+    "splitType": "EQUAL",
+    "category": "Rent"
+  },
+  {
+    "groupName": "Roommates",
+    "title": "Fiber Internet & Electricity",
+    "amountPaisa": 350000,
+    "paidByEmail": "aarav.gurung@example.com",
+    "splitType": "EQUAL",
+    "category": "Utilities"
+  },
+  {
+    "groupName": "Roommates",
+    "title": "Water Tanker & Cleaning",
+    "amountPaisa": 180000,
+    "paidByEmail": "suman.sharma@example.com",
+    "splitType": "EQUAL",
+    "category": "Utilities"
+  },
+  {
+    "groupName": "College Friends",
+    "title": "Project Defense Hardcover Binding",
+    "amountPaisa": 180000,
+    "paidByEmail": "aarav.gurung@example.com",
+    "splitType": "EQUAL",
+    "category": "Education"
+  },
+  {
+    "groupName": "College Friends",
+    "title": "Department Seminar Hall Fee",
+    "amountPaisa": 300000,
+    "paidByEmail": "suman.sharma@example.com",
+    "splitType": "EQUAL",
+    "category": "Education"
+  },
+  {
+    "groupName": "College Friends",
+    "title": "Cafeteria Group Lunch",
+    "amountPaisa": 240000,
+    "paidByEmail": "pooja.thapa@example.com",
+    "splitType": "EQUAL",
+    "category": "Food"
+  }
+]

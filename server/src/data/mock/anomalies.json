@@ -1,0 +1,19 @@
+[
+  {
+    "type": "EXPENSE_OUTLIER",
+    "severity": "CRITICAL",
+    "title": "High Expense Outlier in Pokhara Trip",
+    "headline": "Unusual high-value expense of Rs. 15,000 logged by Suman Sharma in Pokhara Trip.",
+    "message": "Expense Lakeside Hotel Booking exceeds historical average for circle.",
+    "status": "DETECTED",
+    "metrics": {
+      "amountPaisa": 1500000,
+      "groupAvgPaisa": 420000,
+      "overspendRatio": 3.57
+    },
+    "primaryFactors": [
+      "Single expense exceeds circle benchmark by 3.57x",
+      "Recorded amount: Rs. 15,000"
+    ]
+  }
+]

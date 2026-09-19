@@ -1,0 +1,33 @@
+export const AVAILABLE_PERMISSIONS = [
+  { id: '*', label: 'Full Root Access (*)', desc: 'Unrestricted administrative authority' },
+  { id: 'users:read', label: 'View Users', desc: 'Read directory and statistics' },
+  { id: 'users:create', label: 'Create Users', desc: 'Register accounts manually' },
+  { id: 'users:update', label: 'Edit Users', desc: 'Modify account profiles' },
+  { id: 'users:suspend', label: 'Suspend Users', desc: 'Suspend or reactivate accounts' },
+  { id: 'users:delete', label: 'Delete Users', desc: 'Permanently remove accounts' },
+  { id: 'groups:read', label: 'View Groups', desc: 'Inspect circles, debts, and members' },
+  { id: 'groups:create', label: 'Create Groups', desc: 'Provision groups and assign members' },
+  { id: 'groups:update', label: 'Edit Groups', desc: 'Modify group details and members' },
+  { id: 'groups:delete', label: 'Delete Groups', desc: 'Remove groups and clean up records' },
+  { id: 'expenses:read', label: 'View Expenses', desc: 'Audit expenses across all circles' },
+  { id: 'expenses:create', label: 'Create Expenses', desc: 'Record bills on behalf of users' },
+  { id: 'expenses:update', label: 'Edit Expenses', desc: 'Alter expense amounts and splits' },
+  { id: 'expenses:delete', label: 'Delete Expenses', desc: 'Purge expenses with audit trace' },
+  {
+    id: 'settlements:read',
+    label: 'View Settlements',
+    desc: 'Audit platform debt graph and obligations',
+  },
+  {
+    id: 'settlements:create',
+    label: 'Record Settlements',
+    desc: 'Settle and clear debts administratively',
+  },
+  {
+    id: 'analytics:read',
+    label: 'View Analytics',
+    desc: 'Inspect platform analytics, volumes, and trends',
+  },
+  { id: 'admins:manage', label: 'Manage Staff', desc: 'Manage administrative staff accounts' },
+  { id: 'audit:read', label: 'Audit Logs', desc: 'Inspect security and admin audit logs' },
+];

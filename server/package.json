@@ -1,0 +1,33 @@
+{
+  "name": "settlex-server",
+  "version": "1.0.0",
+  "description": "SettleX BCA final-year group expense management and debt settlement system",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node src/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.10.1",
+    "multer": "^2.4.0",
+    "nodemailer": "^10.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.7"
+  },
+  "license": "ISC"
+}

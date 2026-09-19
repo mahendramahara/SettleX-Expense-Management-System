@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Pokhara Trip",
+    "description": "Lakeside tour, boat rentals, and paragliding",
+    "ownerEmail": "suman.sharma@example.com",
+    "memberEmails": [
+      "suman.sharma@example.com",
+      "aarav.gurung@example.com",
+      "pooja.thapa@example.com",
+      "rohan.shrestha@example.com"
+    ]
+  },
+  {
+    "name": "Roommates",
+    "description": "Monthly flat rent, electricity, and water bills",
+    "ownerEmail": "suman.sharma@example.com",
+    "memberEmails": [
+      "suman.sharma@example.com",
+      "aarav.gurung@example.com"
+    ]
+  },
+  {
+    "name": "College Friends",
+    "description": "BCA 8th Semester documentation, cafeteria, and printouts",
+    "ownerEmail": "aarav.gurung@example.com",
+    "memberEmails": [
+      "suman.sharma@example.com",
+      "aarav.gurung@example.com",
+      "pooja.thapa@example.com",
+      "anita.shrestha@example.com"
+    ]
+  }
+]
